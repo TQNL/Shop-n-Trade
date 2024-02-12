@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:eye_armor_trim_smithing_template"
+    },
+    "title": "temp",
+    "description": "temp",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "thijquint:root",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
