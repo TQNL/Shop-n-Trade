@@ -17,6 +17,6 @@ execute positioned ^ ^ ^1 run data modify entity @n[tag=snt_shop_container] inte
 
 # buy
 #  detect if sold item has nbt data
-execute at @n[tag=snt_shop_sign] positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] if data block ~ ~ ~ Items[0].tag run function shop:buy2/shop_buy2 with entity @s
+execute at @n[tag=snt_shop_sign] positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] if data block ~ ~ ~ Items[0].components run function shop:buy2/shop_buy2
 #  directly buy
-execute as @n[tag=snt_shop_sign] at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] unless data block ~ ~ ~ Items[0].tag run function shop:buy2/shop_buy3
+execute as @n[tag=snt_shop_sign] at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] unless data block ~ ~ ~ Items[0].components run function shop:buy2/shop_buy3

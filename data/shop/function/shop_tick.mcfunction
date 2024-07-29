@@ -2,8 +2,11 @@
 execute as @e[tag=snt_shop_container] at @s if data block ~ ~ ~ Items[0].tag run function shop:shop_change_tag with block ~ ~ ~ Items[0]
 execute as @e[tag=snt_shop_container] at @s unless data block ~ ~ ~ Items[0].tag run function shop:shop_change_tag with block ~ ~ ~ Items[0]
 
-# kill player_pos markers when people aren't buying
-execute as @e[tag=snt_player_pos] at @s if entity @p[distance=7..] run kill @s
+# reset movement detection scores of the player has moved
+execute unless score @s shop_dp_isWalking matches 0 run function shop:reset_movement_scores
+execute unless score @s shop_dp_isSprinting matches 0 run function shop:reset_movement_scores
+execute unless score @s shop_dp_isCrouching matches 0 run function shop:reset_movement_scores
+
 
 # new shop detection
 execute as @a[scores={snt_shop_making=1}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function shop:shop_make_ray_cast

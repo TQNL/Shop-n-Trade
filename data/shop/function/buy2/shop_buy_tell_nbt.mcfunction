@@ -1,3 +1,7 @@
+scoreboard players add @s shop_dp_isWalking 0
+scoreboard players add @s shop_dp_isSprinting 0
+scoreboard players add @s shop_dp_isCrouching 0
+
 # all nbt tags tellraw
 tellraw @s {"text": "This shop offers items with nbt data (like enchantments or shulker boxes), verify if this is what you are looking for.\nclick again to buy, move to cancel.\n(1b mostly means 'yes')","color": "gray"}
 execute if data block ~ ~ ~ Items[0].tag.Damage run tellraw @s [{"text":"Damage: ","color":"green"},{"nbt":"Items[0].tag.Damage","block":"~ ~ ~","color":"white"}]
