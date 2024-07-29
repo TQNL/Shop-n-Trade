@@ -16,4 +16,4 @@ execute store result storage snt:shop_sign2 amount short 1 run scoreboard player
 data modify storage snt:shop_sign2 amount set string storage snt:shop_sign2 amount 0 -1
 execute at @s run data modify storage snt:shop_sign2 item_sign set string block ~ ~ ~ front_text.messages[2] 9 -2
 
-execute at @e[tag=snt_shop_container,sort=nearest,limit=1,distance=..0.4] run function shop:buy2/shop_buy_single_container with storage snt:shop_sign2
+execute at @n[tag=snt_shop_container,distance=..0.4] run function shop:buy2/shop_buy_single_container with storage snt:shop_sign2

@@ -14,8 +14,8 @@ execute as @e[tag=snt_potential_shop] at @s unless entity @p[distance=..5.5] run
 # kill deleted shops (signs)
 execute as @e[tag=snt_sell_item1] at @s unless block ~1 ~ ~ #wall_signs unless block ~-1 ~ ~ #wall_signs unless block ~ ~ ~1 #wall_signs unless block ~ ~ ~-1 #wall_signs run kill @s
 execute as @e[tag=snt_sell_item2] at @s unless block ~1 ~ ~ #wall_signs unless block ~-1 ~ ~ #wall_signs unless block ~ ~ ~1 #wall_signs unless block ~ ~ ~-1 #wall_signs run kill @s
-execute as @e[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4]
-execute as @e[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4]
+execute as @n[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @e[tag=snt_sell_item1,distance=..0.4]
+execute as @n[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @e[tag=snt_sell_item2,distance=..0.4]
 execute as @e[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs run kill @s
 #execute as @e[tag=snt_failed_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
 execute as @e[tag=snt_potential_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
@@ -60,7 +60,7 @@ scoreboard players enable @a trapped_in_shop
 execute as @a[scores={trapped_in_shop=1..}] at @s run function shop:trapped_in_shop
 
 # anti griefing
-execute as @a[gamemode=survival,tag=!shop_owner_mode] at @s if entity @e[tag=snt_shop_sign,distance=..6] as @e[tag=snt_shop_sign,sort=nearest,limit=1] run gamemode adventure @p
-execute as @a[gamemode=adventure] at @s unless entity @e[tag=snt_shop_sign,distance=..6] as @e[tag=snt_shop_sign,sort=nearest,limit=1] run gamemode survival @p
-execute as @a[gamemode=adventure,tag=shop_owner_mode] at @s as @e[tag=snt_shop_sign,sort=nearest,limit=1] run gamemode survival @p
+execute as @a[gamemode=survival,tag=!shop_owner_mode] at @s if entity @n[tag=snt_shop_sign,distance=..6] as @e[tag=snt_shop_sign] run gamemode adventure @p
+execute as @a[gamemode=adventure] at @s unless entity @n[tag=snt_shop_sign,distance=..6] as @e[tag=snt_shop_sign] run gamemode survival @p
+execute as @a[gamemode=adventure,tag=shop_owner_mode] at @s as @n[tag=snt_shop_sign] run gamemode survival @p
 

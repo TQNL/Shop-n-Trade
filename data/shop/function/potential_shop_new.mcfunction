@@ -1,7 +1,7 @@
 # kill old shop
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run kill @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4]
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run kill @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4]
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run kill @e[tag=snt_shop_container,sort=nearest,limit=1,distance=..0.4]
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run kill @n[tag=snt_sell_item1,distance=..0.4]
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run kill @n[tag=snt_sell_item2,distance=..0.4]
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run kill @n[tag=snt_shop_container,distance=..0.4]
 
 # shop owner
 execute if entity @s[tag=snt_potential_shop] run data modify storage snt:shop_sign2 shop_owner set string block ~ ~ ~ front_text.messages[0] 9 -2

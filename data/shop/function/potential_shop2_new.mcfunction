@@ -22,9 +22,9 @@ data merge entity @s {Tags:["snt_shop_sign"],CustomName:'{"text":"shop sign"}'}
 # establish shop
 execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run summon interaction ~ ~ ~ {width:0.1f,height:0.1f,attack:{player:[I;-1078970021,1004161751,-1242065986,2109482196],timestamp:3403283L},interaction:{player:[I;-1078970021,1004161751,-1242065986,2109482196],timestamp:3403288L},Tags:["snt_shop_container"],CustomName:'{"text":"shop container"}'}
 #   ! @p might get a closer player, but other selection methods aren't really viable
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @e[tag=snt_shop_container,sort=nearest,limit=1] run data modify entity @e[tag=snt_shop_container,sort=nearest,limit=1] Rotation[0] set from entity @s Rotation[0]
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @e[tag=snt_shop_container,sort=nearest,limit=1] run data modify entity @e[tag=snt_shop_container,sort=nearest,limit=1] interaction.player set from entity @p UUID
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @e[tag=snt_shop_container,sort=nearest,limit=1] run data modify entity @e[tag=snt_shop_container,sort=nearest,limit=1] attack.player set from entity @p UUID
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] Rotation[0] set from entity @s Rotation[0]
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] interaction.player set from entity @p UUID
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] attack.player set from entity @p UUID
 
 # lock it for others
 execute positioned ^ ^ ^1 run data modify block ~ ~ ~ Lock set string entity @s UUID[0]

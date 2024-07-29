@@ -20,7 +20,7 @@ execute unless score @s snt_shop_test3_refund_check = @s snt_shop_pricing run fu
 execute if score @s snt_shop_test2_check_funds matches 0 run return 0
 execute unless score @s snt_shop_test3_refund_check = @s snt_shop_pricing run return 0
 
-execute if score @s snt_shop_test2_check_funds matches 1 if score @s snt_shop_test3_refund_check = @s snt_shop_pricing store success score @s snt_shop_test9_nbt_check at @s run data modify storage snt:shop_sign2 nbt_data set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1] item.tag
+execute if score @s snt_shop_test2_check_funds matches 1 if score @s snt_shop_test3_refund_check = @s snt_shop_pricing store success score @s snt_shop_test9_nbt_check at @s run data modify storage snt:shop_sign2 nbt_data set from entity @n[tag=snt_sell_item2] item.tag
 execute if score @s snt_shop_test2_check_funds matches 1 if score @s snt_shop_test3_refund_check = @s snt_shop_pricing at @s run data modify storage snt:shop_sign2 shop_owner set string block ~ ~ ~ front_text.messages[0] 85 -2
 execute if score @s snt_shop_test2_check_funds matches 1 if score @s snt_shop_test3_refund_check = @s snt_shop_pricing at @s run function shop:buy2/shop_buy_single_container1 with storage snt:shop_sign2
 scoreboard players reset @s snt_shop_test2_check_funds

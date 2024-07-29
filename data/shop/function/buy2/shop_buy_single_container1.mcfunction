@@ -1,137 +1,137 @@
 # check for valid items (anti scam and dupe protection)
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:0b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:0b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:0b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:0b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:0b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:1b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:1b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:1b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:1b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:1b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:2b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:2b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:2b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:2b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:2b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:3b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:3b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:3b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:3b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:3b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:4b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:4b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:4b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:4b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:4b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:5b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:5b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:5b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:5b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:5b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:6b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:6b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:6b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:6b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:6b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:7b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:7b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:7b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:7b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:7b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:8b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:8b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:8b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:8b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:8b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:9b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:9b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:9b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:9b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:9b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:10b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:10b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:10b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:10b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:10b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:11b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:11b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:11b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:11b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:11b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:12b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:12b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:12b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:12b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:12b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:13b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:13b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:13b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:13b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:13b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:14b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:14b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:14b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:14b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:14b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:15b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:15b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:15b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:15b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:15b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:16b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:16b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:16b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:16b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:16b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:17b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:17b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:17b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:17b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:17b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:18b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:18b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:18b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:18b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:18b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:19b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:19b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:19b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:19b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:19b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:20b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:20b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:20b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:20b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:20b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:21b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:21b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:21b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:21b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:21b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:22b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:22b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:22b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:22b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:22b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:23b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:23b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:23b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:23b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:23b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:24b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:24b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:24b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:24b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:24b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:25b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:25b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:25b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:25b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:25b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:26b}].tag
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:26b}].id
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @e[tag=snt_sell_item1,sort=nearest,limit=1,distance=..0.4] item set from entity @e[tag=snt_sell_item2,sort=nearest,limit=1,distance=..0.4] item
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:26b}].tag
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:26b}].id
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
 execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:26b}].Count set value 0
 scoreboard players reset @s snt_shop_test8_item_validation2
 
