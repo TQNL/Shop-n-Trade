@@ -1,10 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:eye_armor_trim_smithing_template"
+      "id": "minecraft:coal"
     },
-    "title": "temp",
-    "description": "temp",
+    "title": "Shop 'n Trade",
+    "description": "Setup easy shops people can trade with.",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false

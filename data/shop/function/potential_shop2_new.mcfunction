@@ -5,14 +5,12 @@ scoreboard players reset @s snt_faulty_item
 $execute store success score @s snt_faulty_pricing run scoreboard players set @s snt_shop_pricing $(pricing)
 execute if score @s snt_faulty_pricing matches 0 run function shop:buy2/failed_shop with storage snt:shop_sign2
 execute if score @s snt_faulty_pricing matches 0 run tellraw @p {"text":"shop sign pricing is not valid","color":"dark_red"}
-execute if score @s snt_faulty_pricing matches 0 run scoreboard players reset @s
-execute unless score @s snt_faulty_pricing matches ..0 unless score @s snt_faulty_pricing matches 0.. run return 0
+execute if score @s snt_faulty_pricing matches 0 run return run scoreboard players reset @s
 
 $execute store success score @s snt_faulty_amount run scoreboard players set @s snt_shop_amount $(amount)
 execute if score @s snt_faulty_amount matches 0 run function shop:buy2/failed_shop with storage snt:shop_sign2
 execute if score @s snt_faulty_amount matches 0 run tellraw @p {"text":"shop sign amount is not valid","color":"dark_red"}
-execute if score @s snt_faulty_amount matches 0 run scoreboard players reset @s
-execute unless score @s snt_faulty_amount matches ..0 unless score @s snt_faulty_amount matches 0.. run return 0
+execute if score @s snt_faulty_amount matches 0 run return run scoreboard players reset @s
 
 #   succes check is useless, because the function macro just stops working
 

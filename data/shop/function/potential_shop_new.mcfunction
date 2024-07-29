@@ -17,8 +17,7 @@ execute store success score @s snt_faulty_item run data modify storage snt:shop_
 
 execute if score @s snt_faulty_item matches 1 run tellraw @p {"text":"shop sign item is not valid","color":"dark_red"}
 execute if score @s snt_faulty_item matches 1 run function shop:buy2/failed_shop with storage snt:shop_sign2
-execute if score @s snt_faulty_item matches 1 run scoreboard players reset @s
-execute unless score @s snt_faulty_item matches ..0 unless score @s snt_faulty_item matches 0.. run return 0
+execute if score @s snt_faulty_item matches 1 run return run scoreboard players reset @s
 
 # pricing
 data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 13 14
