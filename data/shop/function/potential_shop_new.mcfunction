@@ -23,20 +23,17 @@ execute if score @s snt_faulty_item matches 1 run return run scoreboard players 
 data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 13 14
 execute store success score @s snt_faulty_pricing run data modify storage snt:shop_sign2 pricing_magnitude set value ' '
 execute if score @s snt_faulty_pricing matches 0 run data modify storage snt:shop_sign2 pricing set string block ~ ~ ~ front_text.messages[3] 9 13
-execute if score @s snt_faulty_pricing matches 0 run function shop:potential_shop2_new with storage snt:shop_sign2
-execute if score @s snt_faulty_pricing matches 0 run return 0
+execute if score @s snt_faulty_pricing matches 0 run return run function shop:potential_shop2_new with storage snt:shop_sign2
 
 data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 12 13
 execute store success score @s snt_faulty_pricing run data modify storage snt:shop_sign2 pricing_magnitude set value ' '
 execute if score @s snt_faulty_pricing matches 0 run data modify storage snt:shop_sign2 pricing set string block ~ ~ ~ front_text.messages[3] 9 12
-execute if score @s snt_faulty_pricing matches 0 run function shop:potential_shop2_new with storage snt:shop_sign2
-execute if score @s snt_faulty_pricing matches 0 run return 0
+execute if score @s snt_faulty_pricing matches 0 run return run function shop:potential_shop2_new with storage snt:shop_sign2
 
 data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 11 12
 execute store success score @s snt_faulty_pricing run data modify storage snt:shop_sign2 pricing_magnitude set value ' '
 execute if score @s snt_faulty_pricing matches 0 run data modify storage snt:shop_sign2 pricing set string block ~ ~ ~ front_text.messages[3] 9 11
-execute if score @s snt_faulty_pricing matches 0 run function shop:potential_shop2_new with storage snt:shop_sign2
-execute if score @s snt_faulty_pricing matches 0 run return 0
+execute if score @s snt_faulty_pricing matches 0 run return run function shop:potential_shop2_new with storage snt:shop_sign2
 
 data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 10 11
 execute store success score @s snt_faulty_pricing run data modify storage snt:shop_sign2 pricing_magnitude set value ' '
