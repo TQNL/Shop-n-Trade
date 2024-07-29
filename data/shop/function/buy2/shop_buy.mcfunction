@@ -16,5 +16,7 @@ scoreboard players reset @e[tag=snt_shop_sign,sort=nearest,limit=1] snt_shop_tes
 execute positioned ^ ^ ^1 run data modify entity @e[tag=snt_shop_container,sort=nearest,limit=1] interaction.player set from entity @e[tag=snt_shop_container,sort=nearest,limit=1] attack.player
 
 # buy
+#  detect if sold item has nbt data
 execute at @e[tag=snt_shop_sign,sort=nearest,limit=1] positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @e[tag=snt_shop_container,sort=nearest,limit=1] if data block ~ ~ ~ Items[0].tag run function shop:buy2/shop_buy2 with entity @s
+#  directly buy
 execute as @e[tag=snt_shop_sign,sort=nearest,limit=1] at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @e[tag=snt_shop_container,sort=nearest,limit=1] unless data block ~ ~ ~ Items[0].tag run function shop:buy2/shop_buy3
