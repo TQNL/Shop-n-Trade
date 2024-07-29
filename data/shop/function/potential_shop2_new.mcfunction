@@ -34,7 +34,7 @@ tellraw @p {"text": "succesfully made the shop","color": "green"}
 # store the item sold
 execute at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~ ~ {Tags:["snt_sell_item1"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.00390625f,0.00390625f,0.00390625f]},item:{id:"minecraft:blackstone",Count:1b}}
 execute at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~ ~ {Tags:["snt_sell_item2"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.00390625f,0.00390625f,0.00390625f]},item:{id:"minecraft:blackstone",Count:1b}}
-execute at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run execute as @e[type=item_display,sort=nearest,limit=2,distance=..0.4] run data modify entity @s item set from block ~ ~ ~ Items[0]
+execute at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=item_display,sort=nearest,limit=2,distance=..0.4] run data modify entity @s item set from block ~ ~ ~ Items[0]
 
 # clickable sign
 data modify entity @s CustomName set string block ~ ~ ~ front_text.messages[0]

@@ -22,7 +22,7 @@ execute as @n[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs positioned
 execute as @e[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs run kill @s
 #execute as @e[tag=snt_failed_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
 execute as @e[tag=snt_potential_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
-execute as @e[tag=snt_shop_container] at @s positioned ^ ^ ^-1 unless block ~ ~ ~ #wall_signs run execute at @s run data remove block ~ ~ ~ Lock
+execute as @e[tag=snt_shop_container] at @s positioned ^ ^ ^-1 unless block ~ ~ ~ #wall_signs at @s run data remove block ~ ~ ~ Lock
 execute as @e[tag=snt_shop_container] at @s positioned ^ ^ ^-1 unless block ~ ~ ~ #wall_signs run kill @s
 
 # tell shop owners about empty shops
@@ -43,7 +43,7 @@ scoreboard players reset @a[scores={shop_mode_off=1..}] shop_mode_off
 
 # trigger make_shop_here
 scoreboard players enable @a make_shop_here
-execute as @a[scores={make_shop_here=1..}] at @s if block ~ ~ ~ #wall_signs run execute align xyz positioned ~0.5 ~ ~0.5 unless entity @e[tag=snt_shop_sign,distance=..0.4] run function shop:make_shop
+execute as @a[scores={make_shop_here=1..}] at @s if block ~ ~ ~ #wall_signs align xyz positioned ~0.5 ~ ~0.5 unless entity @e[tag=snt_shop_sign,distance=..0.4] run function shop:make_shop
 scoreboard players reset @a[scores={make_shop_here=1..}] make_shop_here
 
 # trigger shop_help

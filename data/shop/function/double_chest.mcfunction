@@ -10,11 +10,11 @@ execute store result score @s snt_double_chest_count2 run data get block ~ ~ ~ I
 execute if score @s snt_double_chest_count2 matches 16 if score @s snt_double_chest_count matches 16 run return 0
 execute if score @s snt_double_chest_count2 matches 1 if score @s snt_double_chest_count matches 1 run return 0
 
-execute if block ~ ~ ~ chest[type=right,facing=north] run execute positioned ~-1 ~ ~ run function shop:buy/double_chest/negx
-execute if block ~ ~ ~ chest[type=right,facing=east] run execute positioned ~ ~ ~-1 run function shop:buy/double_chest/negz
-execute if block ~ ~ ~ chest[type=right,facing=south] run execute positioned ~1 ~ ~ run function shop:buy/double_chest/posx
-execute if block ~ ~ ~ chest[type=right,facing=west] run execute positioned ~ ~ ~1 run function shop:buy/double_chest/posz
-execute if block ~ ~ ~ chest[type=left,facing=north] run execute positioned ~1 ~ ~ run function shop:buy/double_chest/posx
-execute if block ~ ~ ~ chest[type=left,facing=east] run execute positioned ~ ~ ~1 run function shop:buy/double_chest/posz
-execute if block ~ ~ ~ chest[type=left,facing=south] run execute positioned ~-1 ~ ~ run function shop:buy/double_chest/negx
-execute if block ~ ~ ~ chest[type=left,facing=west] run execute positioned ~ ~ ~-1 run function shop:buy/double_chest/negz
+execute if block ~ ~ ~ chest[type=right,facing=north] positioned ~-1 ~ ~ run function shop:buy/double_chest/negx
+execute if block ~ ~ ~ chest[type=right,facing=east] positioned ~ ~ ~-1 run function shop:buy/double_chest/negz
+execute if block ~ ~ ~ chest[type=right,facing=south] positioned ~1 ~ ~ run function shop:buy/double_chest/posx
+execute if block ~ ~ ~ chest[type=right,facing=west] positioned ~ ~ ~1 run function shop:buy/double_chest/posz
+execute if block ~ ~ ~ chest[type=left,facing=north] positioned ~1 ~ ~ run function shop:buy/double_chest/posx
+execute if block ~ ~ ~ chest[type=left,facing=east] positioned ~ ~ ~1 run function shop:buy/double_chest/posz
+execute if block ~ ~ ~ chest[type=left,facing=south] positioned ~-1 ~ ~ run function shop:buy/double_chest/negx
+execute if block ~ ~ ~ chest[type=left,facing=west] positioned ~ ~ ~-1 run function shop:buy/double_chest/negz
