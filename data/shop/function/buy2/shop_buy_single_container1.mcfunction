@@ -182,6 +182,5 @@ scoreboard players reset @s snt_shop_item_count_remainder
 scoreboard players reset @s snt_stack
 
 # give items to the player
-execute if score @s snt_shop_test9_nbt_check matches 0 run function shop:buy2/shop_buy_final_no_nbt with storage snt:shop_sign2
-execute if score @s snt_shop_test9_nbt_check matches 1 run function shop:buy2/shop_buy_final_nbt with storage snt:shop_sign2
-# intruction: replace test 9 with a data check, see what item slot is referrenced with the display the test comes from
+execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 if data entity @n[tag=snt_sell_item2] item.components at @s run return run function shop:buy2/shop_buy_final_nbt with storage snt:shop_sign2
+function shop:buy2/shop_buy_final_no_nbt with storage snt:shop_sign2

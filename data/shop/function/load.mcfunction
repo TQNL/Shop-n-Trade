@@ -12,7 +12,6 @@ scoreboard objectives add snt_shop_test3_refund_check dummy
 scoreboard objectives add snt_shop_test6_owner dummy
 scoreboard objectives add snt_shop_test7_lock dummy
 scoreboard objectives add snt_shop_test8_item_validation2 dummy
-scoreboard objectives add snt_shop_test9_nbt_check dummy
 scoreboard objectives add snt_faulty_amount dummy
 scoreboard objectives add snt_faulty_pricing dummy
 scoreboard objectives add snt_faulty_item dummy
