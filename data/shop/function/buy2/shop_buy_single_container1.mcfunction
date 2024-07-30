@@ -96,7 +96,6 @@ scoreboard players operation @s snt_shop_item_count2 += @s snt_shop_item_count
 
 # 2. check of there is enough stock
 scoreboard players operation @s snt_shop_item_count2 -= @s snt_shop_amount
-
 execute if score @s snt_shop_item_count2 matches ..-1 run return run function shop:buy2/shop_empty with storage snt:shop_sign2
 
 # 3. remove the appropriate amount of items
