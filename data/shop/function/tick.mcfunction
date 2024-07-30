@@ -3,10 +3,7 @@ execute as @e[tag=snt_shop_container] at @s if data block ~ ~ ~ Items[0].tag run
 execute as @e[tag=snt_shop_container] at @s unless data block ~ ~ ~ Items[0].tag run function shop:shop_change_tag with block ~ ~ ~ Items[0]
 
 # reset movement detection scores of the player has moved
-execute unless score @s shop_dp_isWalking matches 0 run function shop:reset_movement_scores
-execute unless score @s shop_dp_isSprinting matches 0 run function shop:reset_movement_scores
-execute unless score @s shop_dp_isCrouching matches 0 run function shop:reset_movement_scores
-
+execute as @a[tag=snt_buying_nbt_item] if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"movement":{"speed":{"min":0.1}}}} run tag @s remove snt_buying_nbt_item
 
 # new shop detection
 execute as @a[scores={snt_shop_making=1}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function shop:shop_make_ray_cast

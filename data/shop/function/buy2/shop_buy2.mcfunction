@@ -1,6 +1,6 @@
 # now executing as the player and at the shop container with nbt data in the sold item
-execute unless score @s shop_dp_isWalking matches 0.. unless score @s shop_dp_isSprinting matches 0.. unless score @s shop_dp_isCrouching matches 0.. run return run function shop:buy2/shop_buy_tell_nbt
+execute unless entity @s[tag=snt_buying_nbt_item] run return run function shop:buy2/shop_buy_tell_nbt
 
-# scores get added for the player in function shop:buy2/shop_buy_tell_nbt - reset in ticking function if they move, so they are 0, or non-existing
-
+# tag gets added to the player in function shop:buy2/shop_buy_tell_nbt - delete in ticking function if they move
+tag @s remove snt_buying_nbt_item
 execute positioned ^ ^ ^-1 as @n[tag=snt_shop_sign] positioned ^ ^ ^1 run function shop:buy2/shop_buy3

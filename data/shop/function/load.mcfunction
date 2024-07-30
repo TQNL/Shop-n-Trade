@@ -1,7 +1,4 @@
 tellraw @a {"text": "Loaded Shop n trade","color": "#00FF00"}
-scoreboard objectives add shop_dp_isWalking minecraft.custom:minecraft.walk_one_cm
-scoreboard objectives add shop_dp_isSprinting minecraft.custom:minecraft.sprint_one_cm
-scoreboard objectives add shop_dp_isCrouching minecraft.custom:minecraft.crouch_one_cm
 
 scoreboard objectives add snt_potential_shop dummy
 scoreboard objectives add snt_shop_amount dummy
