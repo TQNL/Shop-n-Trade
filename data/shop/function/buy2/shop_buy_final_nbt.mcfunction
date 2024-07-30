@@ -1,5 +1,5 @@
 # give items to the player
-$give @p $(item_sign)$(nbt_data) $(amount)
+$loot give @p loot {"pools":[{"rolls":1,"entries":[{"type":"minecraft:item","name":"$(item_sign)"}],"functions":[{"function":"minecraft:set_count","count":$(amount)},{"function":"minecraft:set_components","components":$(nbt_data)}]}]}
 
 # store profits in the shop owners 'account'
 $scoreboard players add $(shop_owner) snt_profits $(pricing)

@@ -26,28 +26,28 @@ execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify st
 execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.8.id set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[8].id 10
 execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.9.id set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[9].id 10
 execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.10.id set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[10].id 10
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.0.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[0].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.1.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[1].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.2.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[2].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.3.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[3].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.4.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[4].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.5.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[5].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.6.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[6].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.7.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[7].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.8.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[8].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.9.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[9].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.10.Count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[10].Count 0 -1
-execute if data storage snt:nbt_data items.0 run tellraw @s [{"nbt":"items.0.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.0.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[0].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.1 run tellraw @s [{"nbt":"items.1.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.1.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[1].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.2 run tellraw @s [{"nbt":"items.2.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.2.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[2].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.3 run tellraw @s [{"nbt":"items.3.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.3.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[3].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.4 run tellraw @s [{"nbt":"items.4.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.4.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[4].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.5 run tellraw @s [{"nbt":"items.5.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.5.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[5].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.6 run tellraw @s [{"nbt":"items.6.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.6.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[6].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.7 run tellraw @s [{"nbt":"items.7.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.7.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[7].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.8 run tellraw @s [{"nbt":"items.8.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.8.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[8].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.9 run tellraw @s [{"nbt":"items.9.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.9.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[9].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.10 run tellraw @s [{"nbt":"items.10.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.10.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[10].tag","block":"~ ~ ~"}]
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.0.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[0].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.1.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[1].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.2.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[2].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.3.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[3].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.4.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[4].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.5.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[5].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.6.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[6].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.7.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[7].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.8.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[8].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.9.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[9].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data modify storage snt:nbt_data items.10.count set string block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[10].count 0 -1
+execute if data storage snt:nbt_data items.0 run tellraw @s [{"nbt":"items.0.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.0.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[0].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.1 run tellraw @s [{"nbt":"items.1.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.1.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[1].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.2 run tellraw @s [{"nbt":"items.2.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.2.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[2].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.3 run tellraw @s [{"nbt":"items.3.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.3.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[3].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.4 run tellraw @s [{"nbt":"items.4.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.4.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[4].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.5 run tellraw @s [{"nbt":"items.5.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.5.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[5].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.6 run tellraw @s [{"nbt":"items.6.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.6.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[6].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.7 run tellraw @s [{"nbt":"items.7.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.7.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[7].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.8 run tellraw @s [{"nbt":"items.8.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.8.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[8].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.9 run tellraw @s [{"nbt":"items.9.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.9.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[9].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.10 run tellraw @s [{"nbt":"items.10.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.10.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.BlockEntityTag.Items[10].tag","block":"~ ~ ~"}]
 execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[11] run tellraw @s {"text": "and more..."}
 execute if data block ~ ~ ~ Items[0].tag.BlockEntityTag.Items run data remove storage snt:nbt_data items
 
@@ -159,28 +159,28 @@ execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_d
 execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.8.id set string block ~ ~ ~ Items[0].tag.Items[8].id 10
 execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.9.id set string block ~ ~ ~ Items[0].tag.Items[9].id 10
 execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.10.id set string block ~ ~ ~ Items[0].tag.Items[10].id 10
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.0.Count set string block ~ ~ ~ Items[0].tag.Items[0].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.1.Count set string block ~ ~ ~ Items[0].tag.Items[1].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.2.Count set string block ~ ~ ~ Items[0].tag.Items[2].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.3.Count set string block ~ ~ ~ Items[0].tag.Items[3].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.4.Count set string block ~ ~ ~ Items[0].tag.Items[4].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.5.Count set string block ~ ~ ~ Items[0].tag.Items[5].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.6.Count set string block ~ ~ ~ Items[0].tag.Items[6].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.7.Count set string block ~ ~ ~ Items[0].tag.Items[7].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.8.Count set string block ~ ~ ~ Items[0].tag.Items[8].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.9.Count set string block ~ ~ ~ Items[0].tag.Items[9].Count 0 -1
-execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.10.Count set string block ~ ~ ~ Items[0].tag.Items[10].Count 0 -1
-execute if data storage snt:nbt_data items.0 run tellraw @s [{"nbt":"items.0.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.0.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[0].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.1 run tellraw @s [{"nbt":"items.1.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.1.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[1].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.2 run tellraw @s [{"nbt":"items.2.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.2.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[2].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.3 run tellraw @s [{"nbt":"items.3.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.3.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[3].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.4 run tellraw @s [{"nbt":"items.4.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.4.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[4].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.5 run tellraw @s [{"nbt":"items.5.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.5.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[5].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.6 run tellraw @s [{"nbt":"items.6.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.6.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[6].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.7 run tellraw @s [{"nbt":"items.7.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.7.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[7].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.8 run tellraw @s [{"nbt":"items.8.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.8.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[8].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.9 run tellraw @s [{"nbt":"items.9.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.9.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[9].tag","block":"~ ~ ~"}]
-execute if data storage snt:nbt_data items.10 run tellraw @s [{"nbt":"items.10.Count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.10.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[10].tag","block":"~ ~ ~"}]
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.0.count set string block ~ ~ ~ Items[0].tag.Items[0].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.1.count set string block ~ ~ ~ Items[0].tag.Items[1].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.2.count set string block ~ ~ ~ Items[0].tag.Items[2].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.3.count set string block ~ ~ ~ Items[0].tag.Items[3].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.4.count set string block ~ ~ ~ Items[0].tag.Items[4].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.5.count set string block ~ ~ ~ Items[0].tag.Items[5].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.6.count set string block ~ ~ ~ Items[0].tag.Items[6].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.7.count set string block ~ ~ ~ Items[0].tag.Items[7].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.8.count set string block ~ ~ ~ Items[0].tag.Items[8].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.9.count set string block ~ ~ ~ Items[0].tag.Items[9].count 0 -1
+execute if data block ~ ~ ~ Items[0].tag.Items run data modify storage snt:nbt_data items.10.count set string block ~ ~ ~ Items[0].tag.Items[10].count 0 -1
+execute if data storage snt:nbt_data items.0 run tellraw @s [{"nbt":"items.0.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.0.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[0].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.1 run tellraw @s [{"nbt":"items.1.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.1.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[1].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.2 run tellraw @s [{"nbt":"items.2.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.2.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[2].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.3 run tellraw @s [{"nbt":"items.3.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.3.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[3].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.4 run tellraw @s [{"nbt":"items.4.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.4.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[4].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.5 run tellraw @s [{"nbt":"items.5.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.5.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[5].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.6 run tellraw @s [{"nbt":"items.6.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.6.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[6].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.7 run tellraw @s [{"nbt":"items.7.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.7.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[7].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.8 run tellraw @s [{"nbt":"items.8.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.8.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[8].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.9 run tellraw @s [{"nbt":"items.9.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.9.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[9].tag","block":"~ ~ ~"}]
+execute if data storage snt:nbt_data items.10 run tellraw @s [{"nbt":"items.10.count","storage":"snt:nbt_data"},{"text":" "},{"nbt":"items.10.id","storage":"snt:nbt_data"},{"nbt":"Items[0].tag.Items[10].tag","block":"~ ~ ~"}]
 execute if data block ~ ~ ~ Items[0].tag.Items[11] run tellraw @s {"text": "and more..."}
 execute if data block ~ ~ ~ Items[0].tag.Items run data remove storage snt:nbt_data items
 
