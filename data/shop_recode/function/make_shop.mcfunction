@@ -1,4 +1,4 @@
-kill @n[tag=snt_potential_shop,distance=..0.4]
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run kill @n[tag=snt_potential_shop,distance=..0.49]
 execute at @s if block ~ ~ ~ #wall_signs[facing=north] unless block ~ ~ ~1 #shop_recode:shop run return 0
 execute at @s if block ~ ~ ~ #wall_signs[facing=east] unless block ~-1 ~ ~ #shop_recode:shop run return 0
 execute at @s if block ~ ~ ~ #wall_signs[facing=south] unless block ~ ~ ~-1 #shop_recode:shop run return 0

@@ -8,11 +8,11 @@ scoreboard players reset @s snt_faulty_item
 data merge entity @s {Tags:["snt_shop_sign"],CustomName:'{"text":"shop sign"}'}
 
 # establish shop
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run summon interaction ~ ~ ~ {width:0.1f,height:0.1f,attack:{player:[I;-1078970021,1004161751,-1242065986,2109482196],timestamp:3403283L},interaction:{player:[I;-1078970021,1004161751,-1242065986,2109482196],timestamp:3403288L},Tags:["snt_shop_container"],CustomName:'{"text":"shop container"}'}
+execute positioned ^ ^ ^1 run summon interaction ~ ~ ~ {width:0.1f,height:0.1f,attack:{player:[I;-1078970021,1004161751,-1242065986,2109482196],timestamp:3403283L},interaction:{player:[I;-1078970021,1004161751,-1242065986,2109482196],timestamp:3403288L},Tags:["snt_shop_container"],CustomName:'{"text":"shop container"}'}
 #   ! @p might get a closer player, but other selection methods aren't really viable
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] Rotation[0] set from entity @s Rotation[0]
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] interaction.player set from entity @p UUID
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] attack.player set from entity @p UUID
+execute positioned ^ ^ ^1 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] Rotation[0] set from entity @s Rotation[0]
+execute positioned ^ ^ ^1 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] interaction.player set from entity @p UUID
+execute positioned ^ ^ ^1 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] attack.player set from entity @p UUID
 
 # lock it for others
 execute positioned ^ ^ ^1 run data modify block ~ ~ ~ Lock set string entity @s UUID[0]
@@ -20,9 +20,9 @@ execute positioned ^ ^ ^1 run data modify block ~ ~ ~ Lock set string entity @s 
 tellraw @p {"text": "succesfully made the shop","color": "green"}
 
 # store the item sold
-execute at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~ ~ {Tags:["snt_sell_item1"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.00390625f,0.00390625f,0.00390625f]},item:{id:"minecraft:blackstone",Count:1b}}
-execute at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~ ~ {Tags:["snt_sell_item2"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.00390625f,0.00390625f,0.00390625f]},item:{id:"minecraft:blackstone",Count:1b}}
-execute at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=item_display,sort=nearest,limit=2,distance=..0.4] run data modify entity @s item set from block ~ ~ ~ Items[0]
+execute positioned ^ ^ ^1 run summon item_display ~ ~ ~ {Tags:["snt_sell_item1"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.00390625f,0.00390625f,0.00390625f]},item:{id:"minecraft:blackstone",Count:1b}}
+execute positioned ^ ^ ^1 run summon item_display ~ ~ ~ {Tags:["snt_sell_item2"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.00390625f,0.00390625f,0.00390625f]},item:{id:"minecraft:blackstone",Count:1b}}
+execute positioned ^ ^ ^1 as @e[type=item_display,sort=nearest,limit=2,distance=..0.4] run data modify entity @s item set from block ~ ~ ~ Items[0]
 
 # clickable sign
 data modify entity @s CustomName set string block ~ ~ ~ front_text.messages[0]
