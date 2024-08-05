@@ -2,7 +2,7 @@
 
 # payment
 $execute store success score @s snt_shop_test2_check_funds store result score @s snt_shop_test3_refund_check run clear @p diamond $(pricing)
-
+$scoreboard players set @s snt_shop_pricing $(pricing)
 
 # remove items from the shop
 # see later function

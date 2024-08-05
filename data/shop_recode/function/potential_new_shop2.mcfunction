@@ -27,7 +27,7 @@ data modify block ~ ~ ~ front_text.messages[0] set value '{"nbt":"data.shop_data
 # shop owner will be gotten from the sign
 # scoreboard snt_shop_amount has the amount (of snt_shop_sign entity) - has to remain
 # the item is contained in the shop
-# scoreboard snt_shop_pricing has the amount (of snt_shop_sign entity) - in the recode snt_faulty_pricing briefly has the price in the 2 function
+# scoreboard snt_shop_pricing has the amount (of snt_shop_sign entity) - established in function shop_recode:buy2/shop_buy4
 # intruction: are these notes invalid?
 
 ## example:
