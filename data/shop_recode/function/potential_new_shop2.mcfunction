@@ -9,8 +9,8 @@ data merge entity @s {Tags:["snt_shop_sign"],CustomName:'{"text":"shop sign"}'}
 
 # establish shop - shop owner is online or saved
 $data modify entity @s data.shop_data.shop_owner_uuid set from entity $(shop_owner) UUID
+$data modify entity @s data.shop_data.shop_owner_uuid_backup set from entity $(shop_owner) UUID
 ## if shop owner isn't here, UUID must already be saved
-## intruction: do we need a backup of the UUID?
 
 # lock it for others
 execute positioned ^ ^ ^1 run data modify block ~ ~ ~ Lock set string entity @s UUID[0]
