@@ -20,12 +20,21 @@ data modify entity @s data.shop_data.amount set string block ~ ~ ~ front_text.me
 ## item
 data modify entity @s data.shop_data.item_sign set string block ~ ~ ~ front_text.messages[2] 1 -1
 execute store success score @s snt_faulty_item run data modify storage snt:shop_handling item_validation set string block ^ ^ ^1 Items[0].id 10
+data remove storage snt:shop_handling item_validation
 
 execute if score @s snt_faulty_item matches 1 run tellraw @p {"text":"shop sign item is not valid","color":"dark_red"}
-execute if score @s snt_faulty_item matches 1 run function shop:buy2/failed_shop with storage snt:shop_sign2
+execute if score @s snt_faulty_item matches 1 run function shop:buy2/failed_shop with entity @s data.shop_data
 execute if score @s snt_faulty_item matches 1 run return run scoreboard players reset @s
 
 ## pricing (is validated in next function)
+data modify storage snt:shop_handling price set string block -1 -60 10 front_text.messages[3] 1 10
+execute if function shop_recode:price_extraction/1 run return run function shop_recode:say
+
+
+
+
+return 0
+
 data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 13 14
 execute store success score @s snt_faulty_pricing run data modify storage snt:shop_sign2 pricing_magnitude set value ' '
 execute if score @s snt_faulty_pricing matches 0 run data modify storage snt:shop_sign2 pricing set string block ~ ~ ~ front_text.messages[3] 9 13
