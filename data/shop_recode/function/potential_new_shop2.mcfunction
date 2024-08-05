@@ -25,7 +25,7 @@ tp @p @s
 data modify block ~ ~ ~ front_text.messages[0] set value '{"nbt":"data.shop_data.shop_owner","entity":"@n[type=marker,tag=snt_shop_sign,distance=..1]","clickEvent":{"action":"run_command","value":"/function shop_recode:buy2/shop_buy"}}'
 
 # shop owner will be gotten from the sign
-# scoreboard snt_shop_amount has the amount (of snt_shop_sign entity)
+# scoreboard snt_shop_amount has the amount (of snt_shop_sign entity) - has to remain
 # the item is contained in the shop
 # scoreboard snt_shop_pricing has the amount (of snt_shop_sign entity) - in the recode snt_faulty_pricing briefly has the price in the 2 function
 # intruction: are these notes invalid?

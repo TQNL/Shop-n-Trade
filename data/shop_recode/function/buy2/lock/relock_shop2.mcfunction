@@ -1,1 +1,1 @@
-$execute as $(shop_owner) if entity @s[tag=shop_owner_mode,distance=32..] run function shop:buy2/lock/relock_shop3
+$execute as $(shop_owner) if entity @s[tag=shop_owner_mode,distance=32..] run function shop_recode:buy2/lock/relock_shop3

@@ -18,7 +18,7 @@ execute store success score @s snt_faulty_item run data modify storage snt:shop_
 data remove storage snt:shop_handling item_validation
 
 execute if score @s snt_faulty_item matches 1 run tellraw @p {"text":"shop sign item is not valid","color":"dark_red"}
-execute if score @s snt_faulty_item matches 1 run function shop:buy2/failed_shop with entity @s data.shop_data
+execute if score @s snt_faulty_item matches 1 run function shop_recode:buy2/failed_shop with entity @s data.shop_data
 execute if score @s snt_faulty_item matches 1 run return run scoreboard players reset @s
 
 # pricing (is validated in next function)
