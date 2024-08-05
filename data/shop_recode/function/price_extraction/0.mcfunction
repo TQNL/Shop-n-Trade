@@ -1,4 +1,3 @@
-$say $(price_snipper)
 scoreboard players add @s snt_price_snipper 1
 execute store result storage snt:shop_handling price_snipper int 1 run scoreboard players get @s snt_price_snipper
 $data modify storage snt:shop_handling price set string block ~ ~ ~ front_text.messages[3] 1 $(price_snipper)
