@@ -20,4 +20,4 @@ execute if score @s snt_faulty_amount matches 0 run tellraw @p {"text":"shop sig
 execute if score @s snt_faulty_amount matches 0 run return run scoreboard players reset @s
 
 ## continue
-function shop_recode:potential_new_shop2
+function shop_recode:potential_new_shop2 with entity @s data.shop_data

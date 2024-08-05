@@ -7,12 +7,10 @@ scoreboard players reset @s snt_faulty_item
 # establish sign of shop
 data merge entity @s {Tags:["snt_shop_sign"],CustomName:'{"text":"shop sign"}'}
 
-# establish shop
-execute positioned ^ ^ ^1 run summon interaction ~ ~ ~ {width:0.1f,height:0.1f,attack:{player:[I;-1078970021,1004161751,-1242065986,2109482196],timestamp:3403283L},interaction:{player:[I;-1078970021,1004161751,-1242065986,2109482196],timestamp:3403288L},Tags:["snt_shop_container"],CustomName:'{"text":"shop container"}'}
-#   ! @p might get a closer player, but other selection methods aren't really viable
-execute positioned ^ ^ ^1 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] Rotation[0] set from entity @s Rotation[0]
-execute positioned ^ ^ ^1 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] interaction.player set from entity @p UUID
-execute positioned ^ ^ ^1 at @n[tag=snt_shop_container] run data modify entity @n[tag=snt_shop_container] attack.player set from entity @p UUID
+# establish shop - shop owner is online or saved
+$data modify entity @s data.shop_data.shop_owner_uuid set from entity $(shop_owner) UUID
+## if shop owner isn't here, UUID must already be saved
+## intruction: do we need a backup of the UUID?
 
 # lock it for others
 execute positioned ^ ^ ^1 run data modify block ~ ~ ~ Lock set string entity @s UUID[0]
