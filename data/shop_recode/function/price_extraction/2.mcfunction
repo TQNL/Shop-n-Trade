@@ -1,2 +1,2 @@
-$scoreboard players set @p test $(price)
+$scoreboard players set @s snt_faulty_pricing $(price)
 return 1

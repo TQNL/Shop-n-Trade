@@ -31,3 +31,5 @@ scoreboard objectives add snt_double_chest_count dummy
 scoreboard objectives add snt_double_chest_count2 dummy
 scoreboard objectives add trapped_in_shop trigger
 scoreboard objectives add snt_firework dummy
+
+scoreboard objectives add snt_price_snipper dummy

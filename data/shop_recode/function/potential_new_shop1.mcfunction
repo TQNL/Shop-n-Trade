@@ -14,7 +14,7 @@
 execute if entity @s[tag=snt_potential_shop] run data modify entity @s data.shop_data.shop_owner set string block ~ ~ ~ front_text.messages[0] 1 -1
 execute if entity @s[tag=snt_shop_sign] run data modify entity @s data.shop_data.shop_owner set string block ~ ~ ~ front_text.messages[0] 85 -2
 
-## amount (is validated in next function)
+## amount (is validated in function no. 2)
 data modify entity @s data.shop_data.amount set string block ~ ~ ~ front_text.messages[1] 1 -1
 
 ## item
@@ -27,30 +27,5 @@ execute if score @s snt_faulty_item matches 1 run function shop:buy2/failed_shop
 execute if score @s snt_faulty_item matches 1 run return run scoreboard players reset @s
 
 ## pricing (is validated in next function)
-data modify storage snt:shop_handling price set string block -1 -60 10 front_text.messages[3] 1 10
-execute if function shop_recode:price_extraction/1 run return run function shop_recode:say
-
-
-
-
-return 0
-
-data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 13 14
-execute store success score @s snt_faulty_pricing run data modify storage snt:shop_sign2 pricing_magnitude set value ' '
-execute if score @s snt_faulty_pricing matches 0 run data modify storage snt:shop_sign2 pricing set string block ~ ~ ~ front_text.messages[3] 9 13
-execute if score @s snt_faulty_pricing matches 0 run return run function shop:potential_shop2_new with storage snt:shop_sign2
-
-data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 12 13
-execute store success score @s snt_faulty_pricing run data modify storage snt:shop_sign2 pricing_magnitude set value ' '
-execute if score @s snt_faulty_pricing matches 0 run data modify storage snt:shop_sign2 pricing set string block ~ ~ ~ front_text.messages[3] 9 12
-execute if score @s snt_faulty_pricing matches 0 run return run function shop:potential_shop2_new with storage snt:shop_sign2
-
-data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 11 12
-execute store success score @s snt_faulty_pricing run data modify storage snt:shop_sign2 pricing_magnitude set value ' '
-execute if score @s snt_faulty_pricing matches 0 run data modify storage snt:shop_sign2 pricing set string block ~ ~ ~ front_text.messages[3] 9 11
-execute if score @s snt_faulty_pricing matches 0 run return run function shop:potential_shop2_new with storage snt:shop_sign2
-
-data modify storage snt:shop_sign2 pricing_magnitude set string block ~ ~ ~ front_text.messages[3] 10 11
-execute store success score @s snt_faulty_pricing run data modify storage snt:shop_sign2 pricing_magnitude set value ' '
-execute if score @s snt_faulty_pricing matches 0 run data modify storage snt:shop_sign2 pricing set string block ~ ~ ~ front_text.messages[3] 9 10
-execute if score @s snt_faulty_pricing matches 0 run function shop:potential_shop2_new with storage snt:shop_sign2
+scoreboard players set @s snt_price_snipper 2
+function shop_recode:price_extraction/0 {price_snipper:2}
