@@ -8,6 +8,7 @@
 ## this function is used for new shops and changing existing shops
 
 # extract information in the form of unquoted strings (+ intigers as strings)
+# markers and this function are set in the block center of the shop sign (xyz)
 
 # shop owner
 execute if entity @s[tag=snt_potential_shop] run data modify entity @s data.shop_data.shop_owner set string block ~ ~ ~ front_text.messages[0] 1 -1

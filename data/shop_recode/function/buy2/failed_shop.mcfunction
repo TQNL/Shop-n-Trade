@@ -1,6 +1,6 @@
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @n[tag=snt_shop_container,distance=..0.4]
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @n[tag=snt_sell_item1,distance=..0.4]
-execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @n[tag=snt_sell_item2,distance=..0.4]
+#execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @n[tag=snt_shop_container,distance=..0.4]
+#execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @n[tag=snt_sell_item1,distance=..0.4]
+#execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @n[tag=snt_sell_item2,distance=..0.4]
 execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run data remove block ~ ~ ~ Lock
 data remove storage snt:shop_sign2 pricing
 data remove storage snt:shop_sign2 amount
