@@ -4,6 +4,8 @@ execute at @s if block ~ ~ ~ #wall_signs[facing=east] unless block ~-1 ~ ~ #shop
 execute at @s if block ~ ~ ~ #wall_signs[facing=south] unless block ~ ~ ~-1 #shop run return 0
 execute at @s if block ~ ~ ~ #wall_signs[facing=west] unless block ~1 ~ ~ #shop run return 0
 
-summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["snt_potential_shop"],ArmorItems:[{id:"minecraft:oak_sign",Count:1b,tag:{BlockEntityTag:{front_text:{messages:['{"text":"h"}','{"text":""}','{"text":""}','{"text":""}']}}}},{},{},{}]}
-data modify entity @n[tag=snt_potential_shop,distance=..0.4] Rotation[0] set from entity @s Rotation[0]
-execute as @n[tag=snt_potential_shop] at @s run function shop:potential_shop_new
+execute at @s if block ~ ~ ~ #wall_signs[facing=north] run summon marker ~ ~ ~ {Tags:["snt_potential_shop"]}
+execute at @s if block ~ ~ ~ #wall_signs[facing=east] run summon marker ~ ~ ~ {Rotation:[90F,0F],Tags:["snt_potential_shop"]}
+execute at @s if block ~ ~ ~ #wall_signs[facing=south] run summon marker ~ ~ ~ {Rotation:[-180F,0F],Tags:["snt_potential_shop"]}
+execute at @s if block ~ ~ ~ #wall_signs[facing=west] run summon marker ~ ~ ~ {Rotation:[-90F,0F],Tags:["snt_potential_shop"]}
+execute as @n[type=marker,tag=snt_potential_shop] at @s run function shop_recode:potential_new_shop1
