@@ -28,7 +28,7 @@ execute at @s positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=i
 data modify entity @s CustomName set string block ~ ~ ~ front_text.messages[0]
 data modify storage snt:shop_sign sign set from block ~ ~ ~ front_text
 
-data merge block ~ ~ ~ {front_text:{messages:['{"nbt":"shop_owner","storage":"snt:shop_sign2","clickEvent":{"action":"run_command","value":"function shop:buy2/shop_buy"}}','{"text":""}','{"text":""}','{"text":""}']}}
+data merge block ~ ~ ~ {front_text:{messages:['{"nbt":"shop_owner","storage":"snt:shop_sign2","clickEvent":{"action":"run_command","value":"/function shop:buy2/shop_buy"}}','{"text":""}','{"text":""}','{"text":""}']}}
 data modify block ~ ~ ~ front_text.messages[1] set from storage snt:shop_sign sign.messages[1]
 data modify block ~ ~ ~ front_text.messages[2] set from storage snt:shop_sign sign.messages[2]
 data modify block ~ ~ ~ front_text.messages[3] set from storage snt:shop_sign sign.messages[3]
