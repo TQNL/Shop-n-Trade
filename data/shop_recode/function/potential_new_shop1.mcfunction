@@ -1,20 +1,14 @@
-# kill old shop
-#execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run kill @n[tag=snt_sell_item1,distance=..0.4]
-#execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run kill @n[tag=snt_sell_item2,distance=..0.4]
-#execute positioned ^ ^ ^1 align xyz positioned ~0.5 ~ ~0.5 run kill @n[tag=snt_shop_container,distance=..0.4]
-## these systems shouldn't be needed: we should store the item data and owner UUID in the marker, also ^ ^ ^1 without alligning is enough
+# instruction: ^ ^ ^1 without alligning is enough
 
-# executing as the potential shop, in the shop sign
+# executing as the potential shop, in the shop sign - markers and this function are set in the block center of the shop sign (xyz)
 ## this function is used for new shops and changing existing shops
-
-# extract information in the form of unquoted strings (+ intigers as strings)
-# markers and this function are set in the block center of the shop sign (xyz)
+## extract information in the form of unquoted strings (+ intigers as strings)
 
 # shop owner
 execute if entity @s[tag=snt_potential_shop] run data modify entity @s data.shop_data.shop_owner set string block ~ ~ ~ front_text.messages[0] 1 -1
 execute if entity @s[tag=snt_shop_sign] run data modify entity @s data.shop_data.shop_owner set string block ~ ~ ~ front_text.messages[0] 85 -2
 
-## amount (is validated in function no. 2)
+## amount (is validated in next function)
 data modify entity @s data.shop_data.amount set string block ~ ~ ~ front_text.messages[1] 1 -1
 
 ## item

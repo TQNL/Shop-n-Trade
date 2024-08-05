@@ -2,13 +2,6 @@ scoreboard players reset @s snt_faulty_pricing
 scoreboard players reset @s snt_faulty_amount
 scoreboard players reset @s snt_faulty_item
 
-$execute store success score @s snt_faulty_amount run scoreboard players set @s snt_shop_amount $(amount)
-execute if score @s snt_faulty_amount matches 0 run function shop:buy2/failed_shop with storage snt:shop_sign2
-execute if score @s snt_faulty_amount matches 0 run tellraw @p {"text":"shop sign amount is not valid","color":"dark_red"}
-execute if score @s snt_faulty_amount matches 0 run return run scoreboard players reset @s
-
-#   succes check is useless, because the function macro just stops working
-
 # now executing as and at snt_shop_sign
 
 # establish sign of shop
