@@ -1,5 +1,5 @@
 # shop change detection
-execute as @e[tag=snt_shop_container] at @s if data block ~ ~ ~ Items[0].tag run function shop:shop_change_tag with block ~ ~ ~ Items[0]
+execute as @e[tag=snt_shop_sign] at @s if data block ~ ~ ~ Items[0].tag run function shop:shop_change_tag with block ~ ~ ~ Items[0]
 execute as @e[tag=snt_shop_container] at @s unless data block ~ ~ ~ Items[0].tag run function shop:shop_change_tag with block ~ ~ ~ Items[0]
 
 # reset movement detection scores of the player has moved
