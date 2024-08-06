@@ -19,6 +19,8 @@ tellraw @p {"text": "succesfully made the shop","color": "green"}
 
 # store the item sold
 data modify entity @s data.shop_data.item set from block ^ ^ ^1 Items[0]
+data remove entity @s data.shop_data.item.Slot
+data remove entity @s data.shop_data.item.count
 
 # clickable sign
 data modify block ~ ~ ~ front_text.messages[0] set value '{"nbt":"data.shop_data.shop_owner","entity":"@n[type=marker,tag=snt_shop_sign,distance=..1]","clickEvent":{"action":"run_command","value":"/function shop_recode:buy2/shop_buy"}}'

@@ -1,6 +1,7 @@
 {
     "values": [
-        "shop:load"
+        "shop:load",
+        "sntlibrary:load"
  ],
  "by ThijquintNL": []
 }
