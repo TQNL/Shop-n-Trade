@@ -26,7 +26,7 @@ execute as @e[tag=snt_shop_container] at @s positioned ^ ^ ^-1 unless block ~ ~ 
 execute as @a[scores={snt_shop_empty=1}] run function shop_recode:buy2/shop_empty_shop with entity @s
 
 # relock shops
-execute as @e[tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock run function shop_recode:buy2/lock/relock_shop
+execute as @e[tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock run function shop_recode:buy2/lock/relock_shop1 with entity @s data.shop_data
 
 # trigger shop_mode_on
 scoreboard players enable @a shop_mode_on
