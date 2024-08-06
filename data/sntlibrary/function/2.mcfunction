@@ -1,6 +1,6 @@
 $data modify storage get_components:extract handling.check set string storage get_components:extract strings.string $(iteration) $(iteration_plus)
 execute store success score #snt_lib_check get_components_library run data modify storage get_components:extract handling.check set value '"'
-execute if score #snt_lib_check get_components_library matches 0 run return run function sntlibrary:init_3
+$execute if score #snt_lib_check get_components_library matches 0 run return run function sntlibrary:3 {n:$(iteration),n_plus:$(iteration_plus)}
 
 # if the check didnt detect a thing
 scoreboard players reset #snt_lib_check get_components_library
