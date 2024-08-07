@@ -2,7 +2,7 @@ $data modify storage get_components:extract handling.check set string storage ge
 execute store success score #snt_lib_check get_components_library run data modify storage get_components:extract handling.check set value ','
 $execute if score #snt_lib_check get_components_library matches 0 run return run function sntlibrary:5 {n:$(iteration),n_plus:$(iteration_plus)}
 
-# if the check didnt detect a double slash
+# if the check didnt detect a thing
 scoreboard players reset #snt_lib_check get_components_library
 scoreboard players add #snt_lib_iteration get_components_library 1
 scoreboard players add #snt_lib_iteration_plus get_components_library 1
