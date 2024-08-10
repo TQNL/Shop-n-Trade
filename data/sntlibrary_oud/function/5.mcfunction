@@ -4,14 +4,9 @@ data modify storage get_components:extract strings.string set string storage get
 # add `=` in the string concatination
 data remove storage get_components:extract handling
 say done
-return 0
-execute if data storage get_components:extract {strings:{string:'"'}} run say terminated
-execute if data storage get_components:extract {strings:{string:'"'}} run return run data remove storage get_components:extract strings
+
+#execute if data storage get_components:extract {strings:{string:'"'}} run say terminated
+#execute if data storage get_components:extract {strings:{string:'"'}} run return run data remove storage get_components:extract strings
 
 tellraw @p {"nbt":"strings.string","storage":"get_components:extract"}
 function sntlibrary:1
-
-
-
-
-# reset #snt_lib_dq_count get_components_library

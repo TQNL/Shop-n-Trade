@@ -1,9 +1,19 @@
 $data modify storage get_components:extract handling.check set string storage get_components:extract strings.string $(iteration) $(iteration_plus)
-execute store success score #snt_lib_check get_components_library run data modify storage get_components:extract handling.check set value '"'
-$execute if score #snt_lib_check get_components_library matches 0 run return run function sntlibrary:3 {n:$(iteration),n_plus:$(iteration_plus)}
 
-# if the check didnt detect a thing
-scoreboard players reset #snt_lib_check get_components_library
+$execute unless score #snt_lib_sq_counter get_components_library matches 1 unless score #snt_lib_br_counter get_components_library matches 1.. if data storage get_components:extract {handling:{check:'"'}} run function sntlibrary:fixer {n:$(iteration),n_plus:$(iteration_plus)}
+
+# if string between double quotes was found
+execute if score #snt_lib_dq_count get_components_library matches 0 run function sntlibrary:3 with storage get_components:extract handling.dq
+
+
+# avoid values between '' and {}
+execute if data storage get_components:extract {handling:{check:"'"}} run function sntlibrary:warner
+execute if data storage get_components:extract {handling:{check:'{'}} run scoreboard players add #snt_lib_br_counter get_components_library 1
+execute if data storage get_components:extract {handling:{check:'}'}} run function sntlibrary:warner2
+
+
+# continue iterating
+data remove storage get_components:extract handling.check
 scoreboard players add #snt_lib_iteration get_components_library 1
 scoreboard players add #snt_lib_iteration_plus get_components_library 1
 execute store result storage get_components:extract handling.iteration int 1 run scoreboard players get #snt_lib_iteration get_components_library

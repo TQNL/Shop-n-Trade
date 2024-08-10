@@ -1,0 +1,1 @@
+scoreboard objectives add get_components_library dummy
