@@ -1,6 +1,6 @@
 {
     "values": [
-        "shop:load",
+        "shop_recode:load",
         "sntlibrary:load"
  ],
  "by ThijquintNL": []

@@ -1,12 +1,6 @@
 # now executing as the shop sign and at @s
 
 # check for valid items (anti scam and dupe protection)
-# intruction: remove elements used in these old commands:
-#execute positioned ^ ^ ^1 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.tag set from block ~ ~ ~ Items[{Slot:0b}].tag
-#execute positioned ^ ^ ^1 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item.id set from block ~ ~ ~ Items[{Slot:0b}].id
-#execute positioned ^ ^ ^1 store success score @s snt_shop_test8_item_validation2 run data modify entity @n[tag=snt_sell_item1,distance=..0.4] item set from entity @n[tag=snt_sell_item2,distance=..0.4] item
-#execute if score @s snt_shop_test8_item_validation2 matches 1 run data modify block ^ ^ ^1 Items[{Slot:0b}].count set value 0
-#scoreboard players reset @s snt_shop_test8_item_validation2
 $execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.0 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.0 with air
 $execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.1 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.1 with air
 $execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.2 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.2 with air

@@ -11,15 +11,9 @@ execute as @a[scores={snt_shop_making=1}] at @s anchored eyes positioned ^ ^ ^ a
 execute as @e[tag=snt_potential_shop] at @s unless entity @p[distance=..5.5] run kill @s
 
 # kill deleted shops (signs)
-execute as @e[tag=snt_sell_item1] at @s unless block ~1 ~ ~ #wall_signs unless block ~-1 ~ ~ #wall_signs unless block ~ ~ ~1 #wall_signs unless block ~ ~ ~-1 #wall_signs run kill @s
-execute as @e[tag=snt_sell_item2] at @s unless block ~1 ~ ~ #wall_signs unless block ~-1 ~ ~ #wall_signs unless block ~ ~ ~1 #wall_signs unless block ~ ~ ~-1 #wall_signs run kill @s
-execute as @n[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @e[tag=snt_sell_item1,distance=..0.4]
-execute as @n[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs positioned ^ ^ ^1 align xyz positioned ~0.5 ~0.5 ~0.5 run kill @e[tag=snt_sell_item2,distance=..0.4]
+execute as @e[tag=snt_shop_sign] at @s run data remove block ^ ^ ^1 Lock
 execute as @e[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs run kill @s
-#execute as @e[tag=snt_failed_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
 execute as @e[tag=snt_potential_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
-execute as @e[tag=snt_shop_container] at @s positioned ^ ^ ^-1 unless block ~ ~ ~ #wall_signs at @s run data remove block ~ ~ ~ Lock
-execute as @e[tag=snt_shop_container] at @s positioned ^ ^ ^-1 unless block ~ ~ ~ #wall_signs run kill @s
 
 # tell shop owners about empty shops
 execute as @a[scores={snt_shop_empty=1}] run function shop_recode:buy2/shop_empty_shop with entity @s

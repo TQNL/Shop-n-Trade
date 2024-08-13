@@ -2,7 +2,6 @@
 $give @p diamond $(refund)
 
 scoreboard players reset @s snt_shop_item_count
-scoreboard players reset @s snt_shop_test8_item_validation2
 scoreboard players reset @s snt_shop_test2_check_funds
 scoreboard players reset @s snt_shop_test3_refund_check
 
