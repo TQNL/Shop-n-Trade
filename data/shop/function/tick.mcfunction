@@ -16,10 +16,10 @@ execute as @e[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs run kill @
 execute as @e[tag=snt_potential_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
 
 # tell shop owners about empty shops
-execute as @a[scores={snt_shop_empty=1}] run function shop_recode:buy2/shop_empty_shop with entity @s
+execute as @a[scores={snt_shop_empty=1}] run function shop:buy2/shop_empty_shop with entity @s
 
 # relock shops
-execute as @e[tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock run function shop_recode:buy2/lock/relock_shop1 with entity @s data.shop_data
+execute as @e[tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock run function shop:buy2/lock/relock_shop1 with entity @s data.shop_data
 
 # trigger shop_mode_on
 scoreboard players enable @a shop_mode_on
@@ -33,7 +33,7 @@ scoreboard players reset @a[scores={shop_mode_off=1..}] shop_mode_off
 
 # trigger make_shop_here - edit: referenced the recode folder instead
 scoreboard players enable @a make_shop_here
-execute as @a[scores={make_shop_here=1..}] at @s if block ~ ~ ~ #wall_signs align xyz positioned ~0.5 ~ ~0.5 unless entity @e[tag=snt_shop_sign,distance=..0.4] run function shop_recode:make_shop
+execute as @a[scores={make_shop_here=1..}] at @s if block ~ ~ ~ #wall_signs align xyz positioned ~0.5 ~ ~0.5 unless entity @e[tag=snt_shop_sign,distance=..0.4] run function shop:make_shop
 scoreboard players reset @a[scores={make_shop_here=1..}] make_shop_here
 
 # trigger shop_help

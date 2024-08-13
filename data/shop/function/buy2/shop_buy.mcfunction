@@ -17,6 +17,6 @@ execute positioned ^ ^ ^1 run data modify entity @n[tag=snt_shop_sign] data.shop
 
 # buy
 #  detect if sold item has nbt data
-execute at @n[tag=snt_shop_sign] positioned ^ ^ ^1 if data block ~ ~ ~ Items[0].components run return run function shop_recode:buy2/shop_buy2
+execute at @n[tag=snt_shop_sign] positioned ^ ^ ^1 if data block ~ ~ ~ Items[0].components run return run function shop:buy2/shop_buy2
 #  directly buy
-execute as @n[tag=snt_shop_sign] at @s positioned ^ ^ ^1 unless data block ~ ~ ~ Items[0].components run function shop_recode:buy2/shop_buy3
+execute as @n[tag=snt_shop_sign] at @s positioned ^ ^ ^1 unless data block ~ ~ ~ Items[0].components run function shop:buy2/shop_buy3

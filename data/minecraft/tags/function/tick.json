@@ -1,6 +1,6 @@
 {
     "values": [
-        "shop_recode:tick",
+        "shop:tick",
         "trade:tick"
  ]
 }

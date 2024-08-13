@@ -92,7 +92,7 @@ scoreboard players operation @s snt_shop_item_count2 += @s snt_shop_item_count
 
 # 2. check of there is enough stock
 scoreboard players operation @s snt_shop_item_count2 -= @s snt_shop_amount
-execute if score @s snt_shop_item_count2 matches ..-1 run return run function shop_recode:buy2/shop_empty with entity @s data.shop_data
+execute if score @s snt_shop_item_count2 matches ..-1 run return run function shop:buy2/shop_empty with entity @s data.shop_data
 
 # 3. remove the appropriate amount of items
 execute store result score @s snt_shop_item_count_stacks run scoreboard players get @s snt_shop_amount
@@ -178,4 +178,4 @@ scoreboard players reset @s snt_stack
 
 ## give items to the player
 $give @p $(item_id)[$(components_command)] $(item_count)
-function shop_recode:buy2/shop_buy_final with entity @s data.shop_data
+function shop:buy2/shop_buy_final with entity @s data.shop_data
