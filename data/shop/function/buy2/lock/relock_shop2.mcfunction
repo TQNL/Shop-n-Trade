@@ -1,1 +1,3 @@
-$execute as $(shop_owner) if entity @s[tag=shop_owner_mode,distance=32..] run function shop:buy2/lock/relock_shop3
+data modify block ^ ^ ^1 Lock set string entity @n[tag=snt_shop_sign] UUID[0]
+tag @s remove shop_owner_mode
+tellraw @s {"text": "succesfully relocked shop","color": "blue"}
