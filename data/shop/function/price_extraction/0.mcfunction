@@ -7,7 +7,9 @@ execute if function shop:price_extraction/1 run return run function shop:price_e
 # if the number test failed: continue with the current scoreboard
 scoreboard players reset @s snt_price_snipper
 data modify storage snt:shop_handling price set string storage snt:shop_handling price 0 -1
-execute if data storage snt:shop_handling {price:""} run data modify storage snt:shop_handling price set value "0"
+execute if data storage snt:shop_handling {price:""} run tellraw @p {"text":"shop sign price is not valid","color":"dark_red"}
+execute if data storage snt:shop_handling {price:""} run function shop:buy2/failed_shop with storage snt:shop_sign2
+execute if data storage snt:shop_handling {price:""} run return run scoreboard players reset @s
 data modify entity @s data.shop_data.pricing set from storage snt:shop_handling price
 data remove storage snt:shop_handling price_snipper
 data remove storage snt:shop_handling price
