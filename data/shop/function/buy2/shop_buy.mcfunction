@@ -2,9 +2,11 @@
 
 # relock container, incase unlocked (executing as the shop sign and at the shop container)
 scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test7_lock
-execute unless data block ^ ^ ^1 Lock store success score @n[tag=snt_shop_sign] snt_shop_test7_lock run data modify block ^ ^ ^1 Lock set string entity @n[tag=snt_shop_sign] UUID[0]
+execute as @n[tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock store success score @s snt_shop_test7_lock run data modify block ^ ^ ^1 Lock set string entity @s UUID[0]
 execute if score @n[tag=snt_shop_sign] snt_shop_test7_lock matches 1 run tellraw @s {"text": "succesfully relocked shop","color": "blue"}
+execute if score @n[tag=snt_shop_sign] snt_shop_test7_lock matches 1 run scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test7_lock
 execute if score @n[tag=snt_shop_sign] snt_shop_test7_lock matches 1 run return run tag @s remove shop_owner_mode
+scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test7_lock
 
 # shop owner unlocks container
 #execute store success score @n[tag=snt_shop_sign] snt_shop_test6_owner positioned ^ ^ ^1 run data modify entity @n[tag=snt_shop_sign] data.shop_data.shop_owner_uuid set from entity @s UUID
