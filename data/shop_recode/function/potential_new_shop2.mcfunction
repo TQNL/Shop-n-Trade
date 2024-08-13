@@ -17,10 +17,9 @@ execute positioned ^ ^ ^1 run data modify block ~ ~ ~ Lock set string entity @s 
 
 tellraw @p {"text": "succesfully made the shop","color": "green"}
 
-# store the item sold
-data modify entity @s data.shop_data.item set from block ^ ^ ^1 Items[0]
-data remove entity @s data.shop_data.item.Slot
-data remove entity @s data.shop_data.item.count
+# store the item sold - using my extract components library: https://github.com/TQNL/Extract-Components-Library
+function sntlibrary:list1/init {source:'block',target:'^ ^ ^1',path:'Items[0]'}
+data modify entity @s data.shop_data.item set from storage get_components:extract
 
 # clickable sign
 data modify block ~ ~ ~ front_text.messages[0] set value '{"nbt":"data.shop_data.shop_owner","entity":"@n[type=marker,tag=snt_shop_sign,distance=..1]","clickEvent":{"action":"run_command","value":"/function shop_recode:buy2/shop_buy"}}'

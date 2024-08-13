@@ -8,18 +8,18 @@ data remove storage get_components:extract source
 data remove storage get_components:extract target
 data remove storage get_components:extract path
 
-$execute unless data $(source) $(target) $(path).components run return run data modify storage get_components:extract components_command set value ''
-
 ##data remove storage get_components:extract lists_backup
 data remove storage get_components:extract combining
 data remove storage get_components:extract components_command
-
-forceload add -14 19
 
 $data merge storage get_components:extract {handling:{get:{source:'$(source)',target:'$(target)',path:'$(path)'}}}
 data modify storage get_components:extract source set from storage get_components:extract handling.get.source
 data modify storage get_components:extract target set from storage get_components:extract handling.get.target
 data modify storage get_components:extract path set from storage get_components:extract handling.get.path
+
+$execute unless data $(source) $(target) $(path).components run return run function sntlibrary:clear_components
+
+forceload add -14 19
 
 $data modify storage get_components:extract handling.store_data set from $(source) $(target) $(path).components
 setblock -14 -64 19 oak_sign{front_text:{messages:['{"nbt":"handling.store_data","storage":"get_components:extract"}','{"text":""}','{"text":""}','{"text":""}']}} replace
