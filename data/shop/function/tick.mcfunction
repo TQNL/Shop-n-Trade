@@ -4,6 +4,9 @@
 # reset movement detection scores of the player has moved
 execute as @a[tag=snt_buying_nbt_item] if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"movement":{"speed":{"min":0.1}}}} run tag @s remove snt_buying_nbt_item
 
+# reset shop detection
+execute as @a[advancements={shop:enter_sign=true}] at @s unless block ~ ~ ~ #wall_signs run advancement revoke @s only shop:enter_sign
+
 # kill mistaken shops
 execute as @e[tag=snt_potential_shop] at @s unless entity @p[distance=..5.5] run kill @s
 
