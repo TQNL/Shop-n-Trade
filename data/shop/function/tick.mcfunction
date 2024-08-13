@@ -4,9 +4,6 @@
 # reset movement detection scores of the player has moved
 execute as @a[tag=snt_buying_nbt_item] if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"movement":{"speed":{"min":0.1}}}} run tag @s remove snt_buying_nbt_item
 
-# new shop detection
-execute as @a[scores={snt_shop_making=1}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function shop:shop_make_ray_cast
-
 # kill mistaken shops
 execute as @e[tag=snt_potential_shop] at @s unless entity @p[distance=..5.5] run kill @s
 
@@ -21,17 +18,7 @@ execute as @a[scores={snt_shop_empty=1}] run function shop:buy2/shop_empty_shop 
 # relock shops
 execute as @e[tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock run function shop:buy2/lock/relock_shop1 with entity @s data.shop_data
 
-# trigger shop_mode_on
-scoreboard players enable @a shop_mode_on
-execute as @a[scores={shop_mode_on=1..}] at @s run scoreboard players set @s snt_shop_making 1
-scoreboard players reset @a[scores={shop_mode_on=1..}] shop_mode_on
-
-# trigger shop_mode_off
-scoreboard players enable @a shop_mode_off
-execute as @a[scores={shop_mode_off=1..}] at @s run scoreboard players reset @s snt_shop_making
-scoreboard players reset @a[scores={shop_mode_off=1..}] shop_mode_off
-
-# trigger make_shop_here - edit: referenced the recode folder instead
+# trigger make_shop_here
 scoreboard players enable @a make_shop_here
 execute as @a[scores={make_shop_here=1..}] at @s if block ~ ~ ~ #wall_signs align xyz positioned ~0.5 ~ ~0.5 unless entity @e[tag=snt_shop_sign,distance=..0.4] run function shop:make_shop
 scoreboard players reset @a[scores={make_shop_here=1..}] make_shop_here
