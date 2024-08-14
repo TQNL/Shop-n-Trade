@@ -33,9 +33,8 @@ scoreboard players reset @a[scores={shop_help=1..}] shop_help
 
 # trigger collect_shop_profits - retire storage
 scoreboard players enable @a collect_shop_profits
-execute as @a[scores={collect_shop_profits=1..},limit=1] store result storage snt:shop_sign2 profits short 1 run scoreboard players get @s snt_profits
-execute as @a[scores={collect_shop_profits=1..},limit=1] run data modify storage snt:shop_sign2 profits set string storage snt:shop_sign2 profits 0 -1
-execute as @a[scores={collect_shop_profits=1..},limit=1] run function shop:collect_shop_profits with storage snt:shop_sign2
+execute as @a[scores={collect_shop_profits=1..},limit=1] store result storage snt:shop_handling profits int 1 run scoreboard players get @s snt_profits
+execute as @a[scores={collect_shop_profits=1..},limit=1] run function shop:collect_shop_profits with storage snt:shop_handling
 scoreboard players reset @a[scores={collect_shop_profits=1..}] collect_shop_profits
 
 # emergency trigger against anti griefing measure
