@@ -167,6 +167,7 @@ execute unless score @s snt_shop_item_count_stacks matches 0 run data remove blo
 execute unless score @s snt_shop_item_count_stacks matches 0 run scoreboard players remove @s snt_shop_item_count_stacks 1
 
 execute unless score @s snt_stack matches ..-1 store result block ^ ^ ^1 Items[0].count byte 1 run scoreboard players get @s snt_stack
+execute if score @s snt_stack matches 0 run data remove block ^ ^ ^1 Items[0]
 execute if score @s snt_stack matches ..-1 store result score @s snt_shop_item_count_stacks run data get block ^ ^ ^1 Items[1].count
 execute if score @s snt_stack matches ..-1 run scoreboard players operation @s snt_shop_item_count_stacks += @s snt_stack
 execute if score @s snt_stack matches ..-1 store result block ^ ^ ^1 Items[1].count byte 1 run scoreboard players get @s snt_shop_item_count_stacks
@@ -177,5 +178,5 @@ scoreboard players reset @s snt_shop_item_count_remainder
 scoreboard players reset @s snt_stack
 
 ## give items to the player
-$give @p $(item_id)[$(components_command)] $(item_count)
+$give @p $(item_id)[$(components_command)] $(sign_amount)
 function shop:buy2/shop_buy_final with entity @s data.shop_data
