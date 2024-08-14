@@ -99,12 +99,8 @@ execute store result score @s snt_shop_item_count_stacks run scoreboard players 
 execute store result score @s snt_shop_item_count_remainder run scoreboard players get @s snt_shop_amount
 
 ## determine max. stack size
-execute store result score @s snt_itemcount0 run data get block ^ ^ ^1 Items[0].count
-execute store result score @s snt_itemcount1 run data get block ^ ^ ^1 Items[1].count
-execute if score @s snt_itemcount0 >= @s snt_itemcount1 store result score @s snt_stack run scoreboard players get @s snt_itemcount0
-execute if score @s snt_itemcount0 < @s snt_itemcount1 store result score @s snt_stack run scoreboard players get @s snt_itemcount1
-execute if score @s snt_stack matches 2..16 run scoreboard players set @s snt_stack 16
-execute if score @s snt_stack matches 17..64 run scoreboard players set @s snt_stack 64
+execute unless data entity @s data.shop_data.stack_size run function shop:buy2/stack
+execute if data entity @s data.shop_data.stack_size store result score @s snt_stack run data get entity @s data.shop_data.stack_size
 
 scoreboard players operation @s snt_shop_item_count_stacks /= @s snt_stack
 scoreboard players operation @s snt_shop_item_count_remainder %= @s snt_stack
