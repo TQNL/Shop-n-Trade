@@ -21,3 +21,4 @@ scoreboard objectives add snt_profits dummy
 scoreboard objectives add shop_help trigger
 scoreboard objectives add trapped_in_shop trigger
 scoreboard objectives add snt_price_snipper dummy
+scoreboard objectives add snt_total_count_storage dummy

@@ -1,33 +1,33 @@
 # now executing as the shop sign and at @s
 
 # check for valid items (anti scam and dupe protection)
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.0 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.0 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.1 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.1 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.2 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.2 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.3 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.3 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.4 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.4 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.5 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.5 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.6 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.6 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.7 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.7 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.8 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.8 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.9 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.9 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.10 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.10 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.11 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.11 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.12 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.12 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.13 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.13 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.14 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.14 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.15 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.15 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.16 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.16 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.17 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.17 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.18 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.18 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.19 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.19 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.20 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.20 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.21 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.21 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.22 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.22 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.23 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.23 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.24 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.24 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.25 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.25 with air
-$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.26 $(item_id)[$(components_command)] run item replace block ~ ~ ~ container.26 with air
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.0 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:0b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.1 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:1b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.2 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:2b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.3 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:3b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.4 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:4b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.5 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:5b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.6 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:6b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.7 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:7b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.8 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:8b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.9 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:9b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.10 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:10b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.11 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:11b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.12 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:12b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.13 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:13b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.14 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:14b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.15 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:15b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.16 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:16b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.17 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:17b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.18 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:18b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.19 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:19b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.20 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:20b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.21 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:21b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.22 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:22b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.23 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:23b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.24 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:24b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.25 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:25b}]
+$execute positioned ^ ^ ^1 unless items block ~ ~ ~ container.26 $(item_id)[$(components_command)] run function shop:buy2/eject with block ~ ~ ~ Items[{Slot:26b}]
 
 # remove items from the shop
 # 1. count the stock
