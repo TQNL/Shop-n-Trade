@@ -35,8 +35,7 @@ scoreboard players reset @a[scores={shop_help=1..}] shop_help
 scoreboard players enable @a trapped_in_shop
 execute as @a[scores={trapped_in_shop=1..}] at @s run function shop:trapped_in_shop
 
-# anti griefing
+# anti griefing - adventure is the best way probs
 execute as @a[gamemode=survival,tag=!shop_owner_mode] at @s if entity @n[tag=snt_shop_sign,distance=..6] as @e[tag=snt_shop_sign] run gamemode adventure @p
 execute as @a[gamemode=adventure] at @s unless entity @n[tag=snt_shop_sign,distance=..6] as @e[tag=snt_shop_sign] run gamemode survival @p
 execute as @a[gamemode=adventure,tag=shop_owner_mode] at @s as @n[tag=snt_shop_sign] run gamemode survival @p
-
