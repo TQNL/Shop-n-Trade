@@ -1,5 +1,3 @@
-# instruction: ^ ^ ^1 without alligning is enough
-
 # executing as the potential shop, in the shop sign - markers and this function are set in the block center of the shop sign (xyz)
 ## this function is used for new shops and changing existing shops
 ## extract information in the form of unquoted strings (+ intigers as strings)
