@@ -1,3 +1,3 @@
-$give @s diamond $(profits)
-scoreboard players reset @s snt_profits
-data remove storage snt:shop_handling profits
+# clicked in sign: now executing as the player and at the sign
+$give @s diamond $(stored_profits)
+scoreboard players reset @n[tag=snt_shop_sign] snt_profits

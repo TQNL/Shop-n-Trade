@@ -1,5 +1,5 @@
-# store profits in the shop owners 'account'
-$scoreboard players add $(shop_owner) snt_profits $(pricing)
+# store profits in the shop signs 'account'
+$execute store result entity @s data.shop_data.stored_profits int 1 run scoreboard players add @s snt_profits $(pricing)
 
 # free up storage
 data remove entity @s data.shop_data.profits
