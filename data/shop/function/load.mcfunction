@@ -20,7 +20,6 @@ scoreboard objectives add snt_itemcount0 dummy
 scoreboard objectives add snt_itemcount1 dummy
 scoreboard objectives add snt_shop_empty dummy
 scoreboard objectives add snt_profits dummy
-scoreboard objectives add make_shop_here trigger
 scoreboard objectives add shop_help trigger
 scoreboard objectives add snt_double_chest_count dummy
 scoreboard objectives add snt_double_chest_count2 dummy
