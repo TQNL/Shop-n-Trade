@@ -22,7 +22,6 @@ scoreboard objectives add snt_shop_empty dummy
 scoreboard objectives add snt_profits dummy
 scoreboard objectives add make_shop_here trigger
 scoreboard objectives add shop_help trigger
-scoreboard objectives add collect_shop_profits trigger
 scoreboard objectives add snt_double_chest_count dummy
 scoreboard objectives add snt_double_chest_count2 dummy
 scoreboard objectives add trapped_in_shop trigger
