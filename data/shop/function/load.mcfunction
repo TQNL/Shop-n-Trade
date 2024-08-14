@@ -1,9 +1,7 @@
 tellraw @a {"text": "Loaded Shop n trade","color": "#00FF00"}
 
-scoreboard objectives add snt_potential_shop dummy
 scoreboard objectives add snt_shop_amount dummy
 scoreboard objectives add snt_shop_pricing dummy
-scoreboard objectives add snt_shop_change dummy
 scoreboard objectives add snt_shop_test2_check_funds dummy
 scoreboard objectives add snt_shop_test3_refund_check dummy
 scoreboard objectives add snt_shop_test6_owner dummy
@@ -21,9 +19,5 @@ scoreboard objectives add snt_itemcount1 dummy
 scoreboard objectives add snt_shop_empty dummy
 scoreboard objectives add snt_profits dummy
 scoreboard objectives add shop_help trigger
-scoreboard objectives add snt_double_chest_count dummy
-scoreboard objectives add snt_double_chest_count2 dummy
 scoreboard objectives add trapped_in_shop trigger
-scoreboard objectives add snt_firework dummy
-
 scoreboard objectives add snt_price_snipper dummy

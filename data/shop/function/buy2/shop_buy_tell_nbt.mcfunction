@@ -208,49 +208,49 @@ tellraw @s {"entity":"@n[tag=snt_shop_sign]","nbt":"data.shop_data.item.componen
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[0] if score @s snt_firework matches 2 run data modify storage snt:nbt_data fireworks.0 set value Star-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[0] if score @s snt_firework matches 3 run data modify storage snt:nbt_data fireworks.0 set value Creeper-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[0] if score @s snt_firework matches 4 run data modify storage snt:nbt_data fireworks.0 set value Burst
-scoreboard players reset @s snt_firework
+#scoreboard players reset @s snt_firework
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[1] store result score @s snt_firework run data get block ~ ~ ~ Items[0].tag.Fireworks.Explosions[1].Type
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[1] if score @s snt_firework matches 0 run data modify storage snt:nbt_data fireworks.1 set value Small_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[1] if score @s snt_firework matches 1 run data modify storage snt:nbt_data fireworks.1 set value Large_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[1] if score @s snt_firework matches 2 run data modify storage snt:nbt_data fireworks.1 set value Star-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[1] if score @s snt_firework matches 3 run data modify storage snt:nbt_data fireworks.1 set value Creeper-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[1] if score @s snt_firework matches 4 run data modify storage snt:nbt_data fireworks.1 set value Burst
-scoreboard players reset @s snt_firework
+#scoreboard players reset @s snt_firework
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[2] store result score @s snt_firework run data get block ~ ~ ~ Items[0].tag.Fireworks.Explosions[2].Type
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[2] if score @s snt_firework matches 0 run data modify storage snt:nbt_data fireworks.2 set value Small_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[2] if score @s snt_firework matches 1 run data modify storage snt:nbt_data fireworks.2 set value Large_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[2] if score @s snt_firework matches 2 run data modify storage snt:nbt_data fireworks.2 set value Star-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[2] if score @s snt_firework matches 3 run data modify storage snt:nbt_data fireworks.2 set value Creeper-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[2] if score @s snt_firework matches 4 run data modify storage snt:nbt_data fireworks.2 set value Burst
-scoreboard players reset @s snt_firework
+#scoreboard players reset @s snt_firework
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[3] store result score @s snt_firework run data get block ~ ~ ~ Items[0].tag.Fireworks.Explosions[3].Type
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[3] if score @s snt_firework matches 0 run data modify storage snt:nbt_data fireworks.3 set value Small_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[3] if score @s snt_firework matches 1 run data modify storage snt:nbt_data fireworks.3 set value Large_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[3] if score @s snt_firework matches 2 run data modify storage snt:nbt_data fireworks.3 set value Star-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[3] if score @s snt_firework matches 3 run data modify storage snt:nbt_data fireworks.3 set value Creeper-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[3] if score @s snt_firework matches 4 run data modify storage snt:nbt_data fireworks.3 set value Burst
-scoreboard players reset @s snt_firework
+#scoreboard players reset @s snt_firework
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[4] store result score @s snt_firework run data get block ~ ~ ~ Items[0].tag.Fireworks.Explosions[4].Type
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[4] if score @s snt_firework matches 0 run data modify storage snt:nbt_data fireworks.4 set value Small_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[4] if score @s snt_firework matches 1 run data modify storage snt:nbt_data fireworks.4 set value Large_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[4] if score @s snt_firework matches 2 run data modify storage snt:nbt_data fireworks.4 set value Star-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[4] if score @s snt_firework matches 3 run data modify storage snt:nbt_data fireworks.4 set value Creeper-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[4] if score @s snt_firework matches 4 run data modify storage snt:nbt_data fireworks.4 set value Burst
-scoreboard players reset @s snt_firework
+#scoreboard players reset @s snt_firework
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[5] store result score @s snt_firework run data get block ~ ~ ~ Items[0].tag.Fireworks.Explosions[5].Type
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[5] if score @s snt_firework matches 0 run data modify storage snt:nbt_data fireworks.5 set value Small_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[5] if score @s snt_firework matches 1 run data modify storage snt:nbt_data fireworks.5 set value Large_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[5] if score @s snt_firework matches 2 run data modify storage snt:nbt_data fireworks.5 set value Star-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[5] if score @s snt_firework matches 3 run data modify storage snt:nbt_data fireworks.5 set value Creeper-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[5] if score @s snt_firework matches 4 run data modify storage snt:nbt_data fireworks.5 set value Burst
-scoreboard players reset @s snt_firework
+#scoreboard players reset @s snt_firework
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[6] store result score @s snt_firework run data get block ~ ~ ~ Items[0].tag.Fireworks.Explosions[6].Type
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[6] if score @s snt_firework matches 0 run data modify storage snt:nbt_data fireworks.6 set value Small_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[6] if score @s snt_firework matches 1 run data modify storage snt:nbt_data fireworks.6 set value Large_Ball
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[6] if score @s snt_firework matches 2 run data modify storage snt:nbt_data fireworks.6 set value Star-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[6] if score @s snt_firework matches 3 run data modify storage snt:nbt_data fireworks.6 set value Creeper-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[6] if score @s snt_firework matches 4 run data modify storage snt:nbt_data fireworks.6 set value Burst
-scoreboard players reset @s snt_firework
+#scoreboard players reset @s snt_firework
 
 #execute if data storage snt:nbt_data fireworks.0 run tellraw @s [{"text": "1. "},{"nbt":"fireworks.0","storage":"snt:nbt_data"}]
 #execute if data storage snt:nbt_data fireworks.0 if data block ~ ~ ~ Items[0].tag.Fireworks.Explosions[0].Flicker run tellraw @s {"text": "  - Flicker"}
@@ -314,7 +314,7 @@ scoreboard players reset @s snt_firework
 #execute if data block ~ ~ ~ Items[0].tag.Explosion if score @s snt_firework matches 2 run data modify storage snt:nbt_data fireworks.star set value Star-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Explosion if score @s snt_firework matches 3 run data modify storage snt:nbt_data fireworks.star set value Creeper-shaped
 #execute if data block ~ ~ ~ Items[0].tag.Explosion if score @s snt_firework matches 4 run data modify storage snt:nbt_data fireworks.star set value Burst
-scoreboard players reset @s snt_firework
+#scoreboard players reset @s snt_firework
 
 #execute if data storage snt:nbt_data fireworks.star run tellraw @s [{"text": "1. "},{"nbt":"fireworks.star","storage":"snt:nbt_data"}]
 #execute if data storage snt:nbt_data fireworks.star if data block ~ ~ ~ Items[0].tag.Explosion.Flicker run tellraw @s {"text": "  - Flicker"}
