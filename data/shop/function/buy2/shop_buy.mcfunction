@@ -4,15 +4,13 @@
 scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test7_lock
 execute as @n[tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock store success score @s snt_shop_test7_lock run data modify block ^ ^ ^1 Lock set string entity @s UUID[0]
 execute if score @n[tag=snt_shop_sign] snt_shop_test7_lock matches 1 run tellraw @s {"text": "succesfully relocked shop","color": "blue"}
-execute if score @n[tag=snt_shop_sign] snt_shop_test7_lock matches 1 run scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test7_lock
 execute if score @n[tag=snt_shop_sign] snt_shop_test7_lock matches 1 run return run tag @s remove shop_owner_mode
-scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test7_lock
 
 # shop owner unlocks container
-#execute store success score @n[tag=snt_shop_sign] snt_shop_test6_owner positioned ^ ^ ^1 run data modify entity @n[tag=snt_shop_sign] data.shop_data.shop_owner_uuid set from entity @s UUID
-#execute if score @n[tag=snt_shop_sign] snt_shop_test6_owner matches 0 run data remove block ^ ^ ^1 Lock
-#execute if score @n[tag=snt_shop_sign] snt_shop_test6_owner matches 0 run tag @s add shop_owner_mode
-#execute if score @n[tag=snt_shop_sign] snt_shop_test6_owner matches 0 run return run tellraw @s {"text": "Shop unlocked, relocks once you are further than 32 blocks away or click the sign again!","color": "blue"}
+execute at @n[tag=snt_shop_sign] store success score @n[tag=snt_shop_sign] snt_shop_test6_owner positioned ^ ^ ^1 run data modify entity @n[tag=snt_shop_sign] data.shop_data.shop_owner_uuid set from entity @s UUID
+execute if score @n[tag=snt_shop_sign] snt_shop_test6_owner matches 0 run data remove block ^ ^ ^1 Lock
+execute if score @n[tag=snt_shop_sign] snt_shop_test6_owner matches 0 run tag @s add shop_owner_mode
+execute if score @n[tag=snt_shop_sign] snt_shop_test6_owner matches 0 run return run tellraw @s {"text": "Shop unlocked, relocks once you are further than 32 blocks away or click the sign again!","color": "blue"}
 #instruction: uncomment ^
 scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test6_owner
 execute positioned ^ ^ ^1 run data modify entity @n[tag=snt_shop_sign] data.shop_data.shop_owner_uuid set from entity @n[tag=snt_shop_sign] data.shop_data.shop_owner_uuid_backup
