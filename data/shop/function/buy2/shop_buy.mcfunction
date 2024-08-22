@@ -5,6 +5,7 @@ scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test6_owner
 # collect profits
 execute if entity @s[tag=shop_owner_mode] if data entity @n[tag=snt_shop_sign] data.item_storage.list run function shop:buy2/give_back_waste/1
 execute if entity @s[tag=shop_owner_mode] at @n[tag=snt_shop_sign] unless data block ^ ^ ^1 Lock if score @n[tag=snt_shop_sign] snt_profits matches 1.. run return run function shop:collect_shop_profits with entity @n[tag=snt_shop_sign] data.shop_data
+execute if entity @s[tag=shop_owner_mode] at @n[tag=snt_shop_sign] unless data block ^ ^ ^1 Lock if score @n[tag=snt_shop_sign] snt_profits matches 0 run return run scoreboard players reset @n[tag=snt_shop_sign] snt_profits
 
 # relock container, incase unlocked (executing as the shop sign and at the shop container)
 scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test7_lock
