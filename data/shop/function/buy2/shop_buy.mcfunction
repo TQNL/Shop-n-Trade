@@ -22,7 +22,7 @@ scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test6_owner
 execute positioned ^ ^ ^1 run data modify entity @n[tag=snt_shop_sign] data.shop_data.shop_owner_uuid set from entity @n[tag=snt_shop_sign] data.shop_data.shop_owner_uuid_backup
 
 # buy
-#  detect if sold item has nbt data
+## detect if sold item has nbt data
 execute at @n[tag=snt_shop_sign] if data block ^ ^ ^1 Items[0].components run return run function shop:buy2/shop_buy2
-#  directly buy
+## directly buy
 execute as @n[tag=snt_shop_sign] at @s positioned ^ ^ ^1 unless data block ~ ~ ~ Items[0].components run function shop:buy2/shop_buy3
