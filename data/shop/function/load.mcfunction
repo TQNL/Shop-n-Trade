@@ -8,7 +8,6 @@ scoreboard objectives add snt_shop_test6_owner dummy
 scoreboard objectives add snt_shop_test7_lock dummy
 scoreboard objectives add snt_faulty_amount dummy
 scoreboard objectives add snt_faulty_pricing dummy
-scoreboard objectives add snt_faulty_item dummy
 scoreboard objectives add snt_shop_item_count dummy
 scoreboard objectives add snt_shop_item_count2 dummy
 scoreboard objectives add snt_shop_item_count_stacks dummy

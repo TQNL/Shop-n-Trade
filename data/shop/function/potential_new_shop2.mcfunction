@@ -1,6 +1,5 @@
 scoreboard players reset @s snt_faulty_pricing
 scoreboard players reset @s snt_faulty_amount
-scoreboard players reset @s snt_faulty_item
 
 # now executing as and at snt_shop_sign
 
