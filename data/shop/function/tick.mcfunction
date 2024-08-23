@@ -5,18 +5,18 @@ execute as @a[tag=snt_buying_nbt_item] if predicate {"condition":"minecraft:enti
 execute as @a[advancements={shop:enter_sign=true}] at @s unless block ~ ~ ~ #wall_signs run advancement revoke @s only shop:enter_sign
 
 # kill mistaken shops
-execute as @e[tag=snt_potential_shop] at @s unless entity @p[distance=..5.5] run kill @s
+execute as @e[type=marker,tag=snt_potential_shop] at @s unless entity @p[distance=..5.5] run kill @s
 
 # kill deleted shops (signs)
-execute as @e[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs run data remove block ^ ^ ^1 Lock
-execute as @e[tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs run kill @s
-execute as @e[tag=snt_potential_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
+execute as @e[type=marker,tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs run data remove block ^ ^ ^1 Lock
+execute as @e[type=marker,tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_signs run kill @s
+execute as @e[type=marker,tag=snt_potential_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
 
 # tell shop owners about empty shops
 execute as @a[scores={snt_shop_empty=1}] run function shop:buy2/shop_empty_shop with entity @s
 
 # relock shops
-execute as @e[tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock run function shop:buy2/lock/relock_shop1 with entity @s data.shop_data
+execute as @e[type=marker,tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock run function shop:buy2/lock/relock_shop1 with entity @s data.shop_data
 
 # trigger shop_help
 scoreboard players enable @a shop_help
@@ -28,6 +28,6 @@ scoreboard players enable @a trapped_in_shop
 execute as @a[scores={trapped_in_shop=1..}] at @s run function shop:trapped_in_shop
 
 # anti griefing - adventure is the best way probs
-execute as @a[gamemode=survival,tag=!shop_owner_mode] at @s if entity @n[tag=snt_shop_sign,distance=..6] as @e[tag=snt_shop_sign] run gamemode adventure @p
-execute as @a[gamemode=adventure] at @s unless entity @n[tag=snt_shop_sign,distance=..6] as @e[tag=snt_shop_sign] run gamemode survival @p
+execute as @a[gamemode=survival,tag=!shop_owner_mode] at @s if entity @n[tag=snt_shop_sign,distance=..6] as @e[type=marker,tag=snt_shop_sign] run gamemode adventure @p
+execute as @a[gamemode=adventure] at @s unless entity @n[tag=snt_shop_sign,distance=..6] as @e[type=marker,tag=snt_shop_sign] run gamemode survival @p
 execute as @a[gamemode=adventure,tag=shop_owner_mode] at @s as @n[type=marker,tag=snt_shop_sign] run gamemode survival @p
