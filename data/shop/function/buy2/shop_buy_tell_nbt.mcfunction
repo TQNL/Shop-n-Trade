@@ -2,8 +2,8 @@ tag @s add snt_buying_nbt_item
 # all nbt tags tellraw
 tellraw @s {"text": "This shop offers items with item components (like enchantments or shulker boxes), verify if this is what you are looking for.\nclick again to buy, move to cancel.\n(1b sometimes means 'yes')","color": "gray"}
 
-tellraw @s {"entity":"@n[tag=snt_shop_sign]","nbt":"data.shop_data.item.item_id"}
-tellraw @s {"entity":"@n[tag=snt_shop_sign]","nbt":"data.shop_data.item.components_command"} 
+tellraw @s {"entity":"@n[type=marker,tag=snt_shop_sign]","nbt":"data.shop_data.item.item_id"}
+tellraw @s {"entity":"@n[type=marker,tag=snt_shop_sign]","nbt":"data.shop_data.item.components_command"} 
 
 
 
