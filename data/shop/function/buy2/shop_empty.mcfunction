@@ -9,4 +9,4 @@ scoreboard players reset @s snt_shop_item_count
 execute store result score @s snt_shop_test3_refund_check run scoreboard players get @s snt_shop_pricing
 data modify entity @s data.shop_data.refund set from entity @s data.shop_data.pricing
 function shop:buy2/shop_insufficient_funds with entity @s data.shop_data
-tellraw @p {"text": "this shop is out of stock","color": "red"}
+tellraw @p {"text": "This shop is out of stock","color": "red"}
