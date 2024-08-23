@@ -10,6 +10,7 @@ execute if entity @s[tag=snt_shop_sign] run data modify entity @s data.shop_data
 data modify entity @s data.shop_data.amount set string block ~ ~ ~ front_text.messages[1] 1 -1
 
 # item
+execute unless data block ^ ^ ^1 Items[0] run return run function shop:buy2/failed_shop with entity @s data.shop_data
 data modify entity @s data.shop_data.item_sign set from block ^ ^ ^1 Items[0].id
 data modify block ~ ~ ~ front_text.messages[2] set value '{"nbt":"data.shop_data.item_sign","entity":"@n[type=marker]"}'
 data modify entity @s data.shop_data.item_sign set string entity @s data.shop_data.item_sign 0 10
