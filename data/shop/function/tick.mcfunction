@@ -1,6 +1,3 @@
-# shop change detection - new plan + clear all data
-##execute as @e[tag=snt_shop_sign] at @s if data block ~ ~ ~ Items[0].tag run function shop:shop_change_tag with block ~ ~ ~ Items[0]
-
 # reset movement detection scores of the player has moved
 execute as @a[tag=snt_buying_nbt_item] if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"movement":{"speed":{"min":0.1}}}} run tag @s remove snt_buying_nbt_item
 
