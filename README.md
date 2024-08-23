@@ -37,6 +37,9 @@ Players purchase items by right-clicking the shop sign. For items with NBT data,
 
 Players near a shop are placed in Adventure mode to prevent unintended interactions. If trapped, use the `/trigger trapped_in_shop` command to escape. Shops are locked by default; the shop owner can unlock the shop by clicking the sign to manage it.
 
+## In-game help
+running `/trigger shop_help` in-game will show a guide in chat with a link to the full [wiki page](https://github.com/TQNL/Shop-n-Trade/wiki/Shop-'n-Trade).
+
 ### notice
 - If you want to support small creators like me, you can turn off ad blocker.
 - Check out my profile for more creations: https://modrinth.com/user/TQNL
