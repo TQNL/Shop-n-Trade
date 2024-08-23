@@ -6,6 +6,8 @@ The **Shop 'n Trade** datapack enhances in-game trading by providing a streamlin
 
 To create a shop, place a sign on a chest, barrel, or shulker box. The sign must include the shop owner’s name, the quantity of items available, and the pricing details. The system automatically detects and validates these details, determining the item to be sold based on the container’s contents. This setup eliminates the need for manual item configuration.
 
+When you walk into the sign, the system automatically detects and sets up the shop based on these details and the container's contents.
+
 ### Sign Format:
 - **1**: In-game username (must be exact).
 - **2**: Amount (number of items sold per batch).
