@@ -13,7 +13,7 @@ execute as @e[type=marker,tag=snt_shop_sign] at @s unless block ~ ~ ~ #wall_sign
 execute as @e[type=marker,tag=snt_potential_shop] at @s unless block ~ ~ ~ #wall_signs run kill @s
 
 # tell shop owners about empty shops
-execute as @a[scores={snt_shop_empty=1}] run function shop:buy2/shop_empty_shop with entity @s
+execute as @a[scores={snt_shop_empty=1}] if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"movement":{"speed":{"min":0.1}}}} run function shop:buy2/shop_empty_shop with entity @s
 
 # relock shops
 execute as @e[type=marker,tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock run function shop:buy2/lock/relock_shop1 with entity @s data.shop_data
