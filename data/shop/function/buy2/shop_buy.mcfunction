@@ -24,6 +24,11 @@ execute if score @n[tag=snt_shop_sign] snt_shop_test6_owner matches 0 run return
 scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test6_owner
 execute positioned ^ ^ ^1 run data modify entity @n[tag=snt_shop_sign] data.shop_data.shop_owner_uuid set from entity @n[tag=snt_shop_sign] data.shop_data.shop_owner_uuid_backup
 
+# tp buying in shop to avoid multiplayer issues
+tag @s add snt_executing
+execute unless data entity @p {Tags:["snt_executing"]} as @n[tag=snt_shop_sign] at @s run tp @p[tag=snt_executing] ^ ^ ^-0.5 ~ 50
+tag @s remove snt_executing
+
 # buy
 ## detect if sold item has nbt data
 execute at @n[tag=snt_shop_sign] if data block ^ ^ ^1 Items[0].components run return run function shop:buy2/shop_buy2
