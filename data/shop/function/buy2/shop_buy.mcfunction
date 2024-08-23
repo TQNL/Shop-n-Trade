@@ -7,6 +7,9 @@ execute if entity @s[tag=shop_owner_mode] if data entity @n[tag=snt_shop_sign] d
 execute if entity @s[tag=shop_owner_mode] at @n[tag=snt_shop_sign] unless data block ^ ^ ^1 Lock if score @n[tag=snt_shop_sign] snt_profits matches 1.. run return run function shop:collect_shop_profits with entity @n[tag=snt_shop_sign] data.shop_data
 execute if entity @s[tag=shop_owner_mode] at @n[tag=snt_shop_sign] unless data block ^ ^ ^1 Lock if score @n[tag=snt_shop_sign] snt_profits matches 0 run return run scoreboard players reset @n[tag=snt_shop_sign] snt_profits
 
+# change sold item? - check only applies to first slot
+execute if entity @s[tag=shop_owner_mode] as @n[type=marker,tag=snt_shop_sign] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run function shop:buy2/change_auto/1 with entity @s data.shop_data.item
+
 # relock container, incase unlocked (executing as the shop sign and at the shop container)
 scoreboard players reset @n[tag=snt_shop_sign] snt_shop_test7_lock
 execute as @n[tag=snt_shop_sign] at @s unless data block ^ ^ ^1 Lock store success score @s snt_shop_test7_lock run data modify block ^ ^ ^1 Lock set string entity @s UUID[0]

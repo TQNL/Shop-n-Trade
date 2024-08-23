@@ -4,7 +4,7 @@
 
 # shop owner
 execute if entity @s[tag=snt_potential_shop] run data modify entity @s data.shop_data.shop_owner set string block ~ ~ ~ front_text.messages[0] 1 -1
-execute if entity @s[tag=snt_shop_sign] run data modify entity @s data.shop_data.shop_owner set string block ~ ~ ~ front_text.messages[0] 85 -2
+execute if entity @s[tag=snt_shop_sign] run data modify entity @s data.shop_data.shop_owner set string block ~ ~ ~ front_text.messages[0] 86 -2
 
 # amount (is validated in next function)
 data modify entity @s data.shop_data.amount set string block ~ ~ ~ front_text.messages[1] 1 -1
