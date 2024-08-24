@@ -20,7 +20,7 @@ When you walk into the sign, the system automatically detects and sets up the sh
 ## Managing the Shop
 
 - **First Click**: Unlocks the shop, allowing inventory management or even destroying the shop. The shop updates automatically with any changes in the container.
-- **Second Click**: Collects profits and waste items. Destroy the shop if you want to.
+- **Second Click**: Collects profits and waste items.
 - **Third Click**: Relocks the shop, or it auto-relocks when the shopkeeper leaves the area.
 
 ## Shop Maintenance and Notifications
