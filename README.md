@@ -25,7 +25,8 @@ When you walk into the sign, the system automatically detects and sets up the sh
 
 ## Shop Maintenance and Notifications
 
-Regularly restock items while the shop is unlocked. The system automatically updates the shop’s inventory with new items. If the shop runs out of stock, the shopkeeper is notified when online and not AFK.
+Regularly restock items while the shop is unlocked. The system automatically updates the shop’s inventory with new items. If the shop runs out of stock, the shopkeeper is notified when online and not AFK. The scoreboard `snt_total_profits` stores the total amount of diamonds someone has ever made from their shops. `/trigger view_shop_profit_scores_toggle` toggles being able to view those total profits on the sidebar.
+
 
 ## Automated Systems
 
