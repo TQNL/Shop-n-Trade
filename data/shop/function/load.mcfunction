@@ -22,3 +22,4 @@ scoreboard objectives add trapped_in_shop trigger
 scoreboard objectives add snt_price_snipper dummy
 scoreboard objectives add snt_total_count_storage dummy
 scoreboard objectives add snt_total_profits dummy "Total Shop Profits"
+scoreboard objectives add view_shop_profit_scores_toggle trigger
