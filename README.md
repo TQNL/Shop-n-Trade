@@ -43,7 +43,7 @@ Players near a shop are placed in Adventure mode to prevent unintended interacti
 ## In-game help
 running `/trigger shop_help` in-game will show a guide in chat with a link to the full [wiki page](https://github.com/TQNL/Shop-n-Trade/wiki/Shop-'n-Trade).
 
-The admin command `/function shop:uninstall` will give a chat message that when pressed removes scoreboards and breaks all shop functionality, so you can remove the data pack without bloat to your world (consider making a backup and becareful who you hand admin permissions on your server).
+The admin command `/function shop:uninstall` will give a chat message that when pressed removes scoreboards and breaks all shop functionality, so you can remove the data pack without bloat to your world (consider making a backup and be careful who you hand admin permissions on your server).
 
 ### notice
 - If you want to support small creators like me, you can turn off ad blocker.
