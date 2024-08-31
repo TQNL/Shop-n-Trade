@@ -1,0 +1,1 @@
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/function shop:view_profits/uninstall_confirm"},"color":"red","hoverEvent":{"action":"show_text","value":[{"text":"yes"}]},"text":"Are you sure?","underlined":true},{"color":"red","text":"\nConsider making a backup of the world","underlined":false}]
