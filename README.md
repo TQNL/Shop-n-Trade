@@ -12,7 +12,7 @@ When you walk into the sign, the system automatically detects and sets up the sh
 - **1**: In-game username (must be exact).
 - **2**: Amount (number of items sold per batch).
 - **3**: Item (automatically detected based on container).
-- **4**: Price (starts with a number; additional letters optional; 0 for free).
+- **4**: Price (in diamonds; starts with a number; additional letters optional; 0 for free).
 
 ### Example:
 ![image](https://github.com/user-attachments/assets/13ad5280-ef1d-412e-9464-d28d0eb053a6)
