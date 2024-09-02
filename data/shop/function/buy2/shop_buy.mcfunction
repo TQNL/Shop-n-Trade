@@ -18,8 +18,7 @@ execute if score @n[type=marker,tag=snt_shop_sign] snt_shop_test7_lock matches 1
 # shop owner unlocks container
 execute at @n[type=marker,tag=snt_shop_sign] store success score @n[type=marker,tag=snt_shop_sign] snt_shop_test6_owner positioned ^ ^ ^1 run data modify entity @n[type=marker,tag=snt_shop_sign] data.shop_data.shop_owner_uuid set from entity @s UUID
 execute at @n[type=marker,tag=snt_shop_sign] if score @n[type=marker,tag=snt_shop_sign] snt_shop_test6_owner matches 0 run data remove block ^ ^ ^1 Lock
-execute if score @n[type=marker,tag=snt_shop_sign] snt_shop_test6_owner matches 0 run tag @s add shop_owner_mode
-execute if score @n[type=marker,tag=snt_shop_sign] snt_shop_test6_owner matches 0 run return run tellraw @s {"text": "Shop unlocked, relocks once you are further than 32 blocks away or click the sign again!","color": "blue"}
+execute if score @n[type=marker,tag=snt_shop_sign] snt_shop_test6_owner matches 0 run return run function shop:buy2/editing with entity @n[type=marker,tag=snt_shop_sign]
 
 scoreboard players reset @n[type=marker,tag=snt_shop_sign] snt_shop_test6_owner
 execute positioned ^ ^ ^1 run data modify entity @n[type=marker,tag=snt_shop_sign] data.shop_data.shop_owner_uuid set from entity @n[type=marker,tag=snt_shop_sign] data.shop_data.shop_owner_uuid_backup
